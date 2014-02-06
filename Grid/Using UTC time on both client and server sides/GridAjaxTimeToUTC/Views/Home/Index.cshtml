@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@model IEnumerable<GridAjaxTimeToUTC.Models.OrderViewModel>
+@(Html.Telerik().Grid <GridAjaxTimeToUTC.Models.OrderViewModel>()
+    .Name("Orders")
+    .DataBinding(binding => binding.Ajax()
+        .Select("_GetOrders", "Home")
+        .Update("UpdateOrder", "Home"))
+        .DataKeys(keys => keys.Add(o => o.OrderID))        
+        .Columns(columns =>
+        {
+            columns.Bound(o => o.OrderID).Width(200);
+            columns.Bound(o => o.DateOfOrder).ClientGroupHeaderTemplate("<#= $.telerik.formatString('{0:G}', Key) #>").Width(120).Title("UTC Date").Width(300);
+            
+            columns.Command(cmd => cmd.Edit());
+        })
+        .Sortable()
+        .Reorderable(r=>r.Columns(true))
+        .Groupable()
+        .ClientEvents(events=> events.OnRowDataBound("OnRowDataBound"))
+)
+
+<script type="text/javascript">
+
+    function toUTC(date) {
+         return new Date(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds(), date.getUTCMilliseconds());
+    }
+
+    //On the first RowDataBound set the row dates so they are UTC and update the view
+    function OnRowDataBound(e) {
+        if (!e.dataItem.utc) {
+            e.dataItem.utc = true;
+            
+            var columns = $(this).data('tGrid').columns;
+            for (var i = 0; i < columns.length; i++) {
+                var col = columns[i];
+                if (col.type == "Date") {
+                    
+                    e.dataItem[col.member] = toUTC(e.dataItem[col.member]);
+                    $('td:not(.t-group-cell)', e.row).eq(i).text($.telerik.formatString("{0:G}", e.dataItem[col.member]));
+                }
+            }
+           
+        }
+     }
+
+</script>

@@ -1,0 +1,7 @@
+c:\users\dimov\documents\visual studio 2010\Projects\OverlappingTabs\OverlappingTabs\bin\OverlappingTabs.dll
+c:\users\dimov\documents\visual studio 2010\Projects\OverlappingTabs\OverlappingTabs\bin\OverlappingTabs.pdb
+c:\users\dimov\documents\visual studio 2010\Projects\OverlappingTabs\OverlappingTabs\bin\Telerik.Web.Mvc.dll
+c:\users\dimov\documents\visual studio 2010\Projects\OverlappingTabs\OverlappingTabs\bin\Telerik.Web.Mvc.xml
+c:\users\dimov\documents\visual studio 2010\Projects\OverlappingTabs\OverlappingTabs\obj\Debug\ResolveAssemblyReference.cache
+c:\users\dimov\documents\visual studio 2010\Projects\OverlappingTabs\OverlappingTabs\obj\Debug\OverlappingTabs.dll
+c:\users\dimov\documents\visual studio 2010\Projects\OverlappingTabs\OverlappingTabs\obj\Debug\OverlappingTabs.pdb

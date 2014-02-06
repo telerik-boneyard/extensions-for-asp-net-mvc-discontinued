@@ -1,0 +1,23 @@
+﻿@using Telerik.Web.Mvc.UI.Fluent;
+@using System.Xml.Linq;
+@model XElement
+				 
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>@ViewBag.Message</h2>
+
+@(Html.Telerik().TreeView()
+				.Name("TreeView")
+				.Items(item => BindXElement(item, Model))
+)
+
+@functions {
+	void BindXElement(TreeViewItemFactory item, XElement elem){
+		var node = item.Add().Text(elem.Name.LocalName);
+		foreach (var e in elem.Elements()) {
+			node.Items(subItem => BindXElement(subItem, e));
+		}
+	}
+}

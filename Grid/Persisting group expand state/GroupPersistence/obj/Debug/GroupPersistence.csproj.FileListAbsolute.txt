@@ -1,0 +1,14 @@
+c:\users\korchev\documents\visual studio 2010\Projects\GroupPersistance\GroupPersistance\bin\GroupPersistance.dll
+c:\users\korchev\documents\visual studio 2010\Projects\GroupPersistance\GroupPersistance\bin\GroupPersistance.pdb
+c:\users\korchev\documents\visual studio 2010\Projects\GroupPersistance\GroupPersistance\bin\Telerik.Web.Mvc.dll
+c:\users\korchev\documents\visual studio 2010\Projects\GroupPersistance\GroupPersistance\bin\Telerik.Web.Mvc.xml
+c:\users\korchev\documents\visual studio 2010\Projects\GroupPersistance\GroupPersistance\obj\Debug\ResolveAssemblyReference.cache
+c:\users\korchev\documents\visual studio 2010\Projects\GroupPersistance\GroupPersistance\obj\Debug\GroupPersistance.dll
+c:\users\korchev\documents\visual studio 2010\Projects\GroupPersistance\GroupPersistance\obj\Debug\GroupPersistance.pdb
+C:\Users\korchev\Documents\visual studio 2010\Projects\GroupPersistance\GroupPersistence\bin\GroupPersistence.dll
+C:\Users\korchev\Documents\visual studio 2010\Projects\GroupPersistance\GroupPersistence\bin\GroupPersistence.pdb
+C:\Users\korchev\Documents\visual studio 2010\Projects\GroupPersistance\GroupPersistence\bin\Telerik.Web.Mvc.dll
+C:\Users\korchev\Documents\visual studio 2010\Projects\GroupPersistance\GroupPersistence\bin\Telerik.Web.Mvc.xml
+C:\Users\korchev\Documents\visual studio 2010\Projects\GroupPersistance\GroupPersistence\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\korchev\Documents\visual studio 2010\Projects\GroupPersistance\GroupPersistence\obj\Debug\GroupPersistence.dll
+C:\Users\korchev\Documents\visual studio 2010\Projects\GroupPersistance\GroupPersistence\obj\Debug\GroupPersistence.pdb

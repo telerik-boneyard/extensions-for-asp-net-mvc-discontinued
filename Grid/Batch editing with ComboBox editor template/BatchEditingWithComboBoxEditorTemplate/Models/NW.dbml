@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Northwind" Class="NWDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\Northwind.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="NorthwindConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Orders" Member="Orders">
+    <Type Name="Order">
+      <Column Name="OrderID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CustomerID" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="EmployeeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OrderDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RequiredDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ShippedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ShipVia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Freight" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="ShipName" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="ShipAddress" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="ShipCity" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="ShipRegion" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="ShipPostalCode" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ShipCountry" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Association Name="Employee_Order" Member="Employee" ThisKey="EmployeeID" OtherKey="EmployeeID" Type="Employee" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employees" Member="Employees">
+    <Type Name="Employee">
+      <Column Name="EmployeeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="TitleOfCourtesy" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="BirthDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HireDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Region" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="PostalCode" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="HomePhone" Type="System.String" DbType="NVarChar(24)" CanBeNull="true" />
+      <Column Name="Extension" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="Photo" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Notes" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ReportsTo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PhotoPath" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="Employee_Employee" Member="Employee1" ThisKey="ReportsTo" OtherKey="EmployeeID" Type="Employee" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

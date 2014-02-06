@@ -1,0 +1,13 @@
+C:\work\temp\tests\RazorSample\RazorSample\bin\RazorSample.dll
+C:\work\temp\tests\RazorSample\RazorSample\bin\RazorSample.pdb
+C:\work\temp\tests\RazorSample\RazorSample\bin\Telerik.Web.Mvc.xml
+C:\work\temp\tests\RazorSample\RazorSample\obj\Debug\ResolveAssemblyReference.cache
+C:\work\temp\tests\RazorSample\RazorSample\obj\Debug\RazorSample.dll
+C:\work\temp\tests\RazorSample\RazorSample\obj\Debug\RazorSample.pdb
+C:\Users\korchev\Desktop\Support\RazorSample\bin\RazorSample.dll
+C:\Users\korchev\Desktop\Support\RazorSample\bin\RazorSample.pdb
+C:\Users\korchev\Desktop\Support\RazorSample\bin\Telerik.Web.Mvc.xml
+C:\Users\korchev\Desktop\Support\RazorSample\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\korchev\Desktop\Support\RazorSample\obj\Debug\RazorSample.dll
+C:\Users\korchev\Desktop\Support\RazorSample\obj\Debug\RazorSample.pdb
+C:\Users\korchev\Desktop\Support\RazorSample\bin\Telerik.Web.Mvc.dll

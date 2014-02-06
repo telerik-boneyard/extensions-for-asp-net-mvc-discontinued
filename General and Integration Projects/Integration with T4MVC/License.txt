@@ -1,0 +1,19 @@
+Telerik Extensions for ASP.NET MVC 2.0
+Copyright © 2002-2009 Telerik. All rights reserved.
+sales@telerik.com
+http://www.telerik.com/purchase/faqs/aspnet-mvc.aspx
+
+We offer two licensing options for Telerik Extensions for ASP.NET MVC.
+
+Telerik Extensions for ASP.NET MVC Open Source GPL (Open Source License)
+------------------------------------------------------------------------------------------
+This is a suitable option if you are building an application for internal use or an open source application with a license compatible with the GNU GPL license v2 (http://www.opensource.org/licenses/gpl-2.0.php) 
+
+Telerik Extensions for ASP.NET MVC Commercial License (Developer License with Subscription and Priority Support)
+------------------------------------------------------------------------------------------
+This is a suitable option if you are building closed-source commercial products for redistribution or if you are not allowed to integrate open-source components in your application. 
+This license is provided per developer so you need to purchase the appropriate number of developer seats from Telerik. 
+View the license terms (http://www.telerik.com/purchase/license-agreement.aspx)
+
+--
+This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.

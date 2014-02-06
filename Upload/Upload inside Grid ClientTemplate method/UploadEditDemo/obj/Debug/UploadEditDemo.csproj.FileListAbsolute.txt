@@ -1,0 +1,7 @@
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\UploadEditDemo\UploadEditDemo\bin\UploadEditDemo.dll
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\UploadEditDemo\UploadEditDemo\bin\UploadEditDemo.pdb
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\UploadEditDemo\UploadEditDemo\bin\Telerik.Web.Mvc.dll
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\UploadEditDemo\UploadEditDemo\bin\Telerik.Web.Mvc.xml
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\UploadEditDemo\UploadEditDemo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\UploadEditDemo\UploadEditDemo\obj\Debug\UploadEditDemo.dll
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\UploadEditDemo\UploadEditDemo\obj\Debug\UploadEditDemo.pdb

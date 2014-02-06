@@ -1,0 +1,20 @@
+﻿.iqVerbiage
+{
+/*padding-left:5px;*/
+width:100%;
+color:Black; 
+background-color:white;
+   padding-left:10px;
+ /*  padding-right:10px; */
+ font-weight:bold;
+text-indent: 1.5em;
+}
+
+.iqParagraph
+{
+padding: 0;
+margin-top: 0;
+margin-right: 0;
+margin-bottom: .015em;
+margin-left: 0;
+ } 

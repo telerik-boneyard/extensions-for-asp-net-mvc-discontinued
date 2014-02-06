@@ -1,0 +1,48 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+    <%: Html.Telerik().StyleSheetRegistrar().DefaultGroup(group => group.Add("telerik.common.css").Add("telerik.office2007.css")) %>
+</head>
+<body>
+    <div class="page">
+        <div id="header">
+            <div id="title">
+                <h1>
+                    My MVC Application</h1>
+            </div>
+            <div id="menucontainer">
+                <ul id="menu">
+                    <li>
+                        <%: Html.ActionLink("Home", "Index", "Home")%></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <div id="footer">
+            </div>
+        </div>
+    </div>
+    
+    <%-- 
+        Since the grid is loaded on demand via ajax its required JavaScript files: http://www.telerik.com/help/aspnet-mvc/telerik-ui-components-required-javascript-files.html
+        must be manually registered
+    --%>
+    
+    <%: Html.Telerik().ScriptRegistrar()
+            .DefaultGroup(group => 
+                group.Add("telerik.common.js") /* this file is required by all Telerik UI components and must be included first */
+                     .Add("telerik.grid.js")   /* main grid JavaScript file - implements ajax binding, sorting and paging */
+                     .Add("telerik.textbox.js") /* numeric texbox JavaScript file (required for filtering of numeric columns) */
+                     .Add("telerik.grid.filtering.js") /* grid filtering JavaScript file */
+                     .Add("telerik.draganddrop.js") /* common drag and drop library (required for grouping) */
+                     .Add("telerik.grid.grouping.js")  /* grid grouping JavaScript file */ 
+    ) %>
+</body>
+</html>

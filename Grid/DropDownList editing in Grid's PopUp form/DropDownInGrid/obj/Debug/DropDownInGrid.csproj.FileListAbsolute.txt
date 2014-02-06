@@ -1,0 +1,7 @@
+C:\work\temp\tests\DropDownInGrid\DropDownInGrid\bin\DropDownInGrid.dll
+C:\work\temp\tests\DropDownInGrid\DropDownInGrid\bin\DropDownInGrid.pdb
+C:\work\temp\tests\DropDownInGrid\DropDownInGrid\bin\Telerik.Web.Mvc.dll
+C:\work\temp\tests\DropDownInGrid\DropDownInGrid\bin\Telerik.Web.Mvc.xml
+C:\work\temp\tests\DropDownInGrid\DropDownInGrid\obj\Debug\ResolveAssemblyReference.cache
+C:\work\temp\tests\DropDownInGrid\DropDownInGrid\obj\Debug\DropDownInGrid.dll
+C:\work\temp\tests\DropDownInGrid\DropDownInGrid\obj\Debug\DropDownInGrid.pdb

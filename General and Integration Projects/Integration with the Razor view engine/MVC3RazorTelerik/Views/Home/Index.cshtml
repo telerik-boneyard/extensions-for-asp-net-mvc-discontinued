@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model IEnumerable<MVC3RazorTelerik.Models.Product>
+
+<h2>@ViewBag.Message</h2>
+<fieldset>
+    <legend>NumericTextBox</legend>
+    @*Single line declaration does not need parentheses*@ 
+    
+    @Html.Telerik().NumericTextBox().Name("NumericTextBox") 
+</fieldset>
+
+<fieldset>
+    <legend>TabStrip</legend>
+    @*Mulitline declaration needs parentheses*@ 
+    
+    @(Html.Telerik().TabStrip() 
+          .Name("TabStrip")
+          .SelectedIndex(0)
+          .Items(items =>
+          {
+              items.Add().Text("Calendar").Content(
+              @<text>
+                @Html.Telerik().Calendar().Name("Calendar")
+              </text>);
+              items.Add().Text("Second").Content(
+              @<text>
+                <ul>
+                    <li>Foo</li>
+                    <li>Bar</li>
+                </ul>
+              </text>);
+          })
+     )
+</fieldset>
+
+<fieldset>
+    <legend>Grid</legend>
+    @(Html.Telerik().Grid(Model)
+        .Name("Grid")
+        .Columns(columns =>
+        {
+            columns.Bound(m => m.ID);
+            columns.Bound(m => m.Name);
+        })
+        .DetailView(detail => detail.Template(
+            @<text>
+                <div>ID: @item.ID</div>
+                <div>Name: @item.Name</div>
+            </text>
+        ))
+    )
+</fieldset>

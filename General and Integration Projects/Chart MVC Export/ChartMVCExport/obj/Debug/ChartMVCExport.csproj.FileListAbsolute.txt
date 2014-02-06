@@ -1,0 +1,16 @@
+c:\users\inikolova\documents\visual studio 2010\Projects\ChartMVCExport\ChartMVCExport\bin\ChartMVCExport.dll
+c:\users\inikolova\documents\visual studio 2010\Projects\ChartMVCExport\ChartMVCExport\bin\ChartMVCExport.pdb
+c:\users\inikolova\documents\visual studio 2010\Projects\ChartMVCExport\ChartMVCExport\bin\Telerik.Web.Mvc.dll
+c:\users\inikolova\documents\visual studio 2010\Projects\ChartMVCExport\ChartMVCExport\bin\Telerik.Web.Mvc.pdb
+c:\users\inikolova\documents\visual studio 2010\Projects\ChartMVCExport\ChartMVCExport\bin\Telerik.Web.Mvc.xml
+c:\users\inikolova\documents\visual studio 2010\Projects\ChartMVCExport\ChartMVCExport\obj\Debug\ResolveAssemblyReference.cache
+c:\users\inikolova\documents\visual studio 2010\Projects\ChartMVCExport\ChartMVCExport\obj\Debug\ChartMVCExport.dll
+c:\users\inikolova\documents\visual studio 2010\Projects\ChartMVCExport\ChartMVCExport\obj\Debug\ChartMVCExport.pdb
+C:\Users\inikolova\Desktop\projectsCodeLib\ChartMVCExport\ChartMVCExport\bin\ChartMVCExport.dll
+C:\Users\inikolova\Desktop\projectsCodeLib\ChartMVCExport\ChartMVCExport\bin\ChartMVCExport.pdb
+C:\Users\inikolova\Desktop\projectsCodeLib\ChartMVCExport\ChartMVCExport\bin\Telerik.Web.Mvc.dll
+C:\Users\inikolova\Desktop\projectsCodeLib\ChartMVCExport\ChartMVCExport\bin\Telerik.Web.Mvc.pdb
+C:\Users\inikolova\Desktop\projectsCodeLib\ChartMVCExport\ChartMVCExport\bin\Telerik.Web.Mvc.xml
+C:\Users\inikolova\Desktop\projectsCodeLib\ChartMVCExport\ChartMVCExport\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\inikolova\Desktop\projectsCodeLib\ChartMVCExport\ChartMVCExport\obj\Debug\ChartMVCExport.dll
+C:\Users\inikolova\Desktop\projectsCodeLib\ChartMVCExport\ChartMVCExport\obj\Debug\ChartMVCExport.pdb

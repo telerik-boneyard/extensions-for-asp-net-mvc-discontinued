@@ -1,0 +1,7 @@
+C:\work\temp\tests\GridAlphabeticPaging\GridAlphabeticPaging\bin\GridAlphabeticPaging.dll
+C:\work\temp\tests\GridAlphabeticPaging\GridAlphabeticPaging\bin\GridAlphabeticPaging.pdb
+C:\work\temp\tests\GridAlphabeticPaging\GridAlphabeticPaging\bin\Telerik.Web.Mvc.dll
+C:\work\temp\tests\GridAlphabeticPaging\GridAlphabeticPaging\bin\Telerik.Web.Mvc.xml
+C:\work\temp\tests\GridAlphabeticPaging\GridAlphabeticPaging\obj\Debug\ResolveAssemblyReference.cache
+C:\work\temp\tests\GridAlphabeticPaging\GridAlphabeticPaging\obj\Debug\GridAlphabeticPaging.dll
+C:\work\temp\tests\GridAlphabeticPaging\GridAlphabeticPaging\obj\Debug\GridAlphabeticPaging.pdb

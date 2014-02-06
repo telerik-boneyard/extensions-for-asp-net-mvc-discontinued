@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NORTHWNDModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="NORTHWNDModelStoreContainer">
+    <EntitySet Name="Orders" EntityType="NORTHWNDModel.Store.Orders" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerID" Type="nchar" MaxLength="5" />
+    <Property Name="EmployeeID" Type="int" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="RequiredDate" Type="datetime" />
+    <Property Name="ShippedDate" Type="datetime" />
+    <Property Name="ShipVia" Type="int" />
+    <Property Name="Freight" Type="money" />
+    <Property Name="ShipName" Type="nvarchar" MaxLength="40" />
+    <Property Name="ShipAddress" Type="nvarchar" MaxLength="60" />
+    <Property Name="ShipCity" Type="nvarchar" MaxLength="15" />
+    <Property Name="ShipRegion" Type="nvarchar" MaxLength="15" />
+    <Property Name="ShipPostalCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="ShipCountry" Type="nvarchar" MaxLength="15" />
+  </EntityType>
+</Schema>

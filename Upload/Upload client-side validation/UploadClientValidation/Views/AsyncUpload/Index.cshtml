@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Async upload with client validation";
+}
+
+@using (Html.BeginForm("ProcessSubmit", "AsyncUpload",
+                         FormMethod.Post, new { id = "uploadForm", enctype = "multipart/form-data" })) { 
+
+    @(Html.Telerik().Upload()
+            .Name("attachments")
+            .Async(async => async
+                .Save("Save", "AsyncUpload")
+            )
+    )
+    
+    @* Some other fields *@
+    
+    <div style="margin: 20px 0 0 4px;">
+        <input type="submit" value="Send" class="t-button" />
+    </div>
+ } 
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        // Register a custom validation method
+        $.validator.addMethod("hasFiles", function (value, element) {
+            // Check for at least one successful upload
+            return $(element).parents(".t-upload").find(".t-file > .t-success").length > 0;
+        }, "Attachment required")
+
+        $("#uploadForm").validate({
+            rules: {
+                attachments: {
+                    hasFiles: true
+                }
+            }
+        });
+    });
+</script>

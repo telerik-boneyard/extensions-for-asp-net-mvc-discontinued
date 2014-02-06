@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>@ViewBag.Title</title>
+	<link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+@(Html.Telerik().StyleSheetRegistrar().DefaultGroup(group => group.Add("telerik.common.css").Add("telerik.black.css").Combined(true).Compress(true)))</head>
+@RenderSection("HeadContent", false)
+<body>
+	<div class="page">
+		<header>
+			<div id="title">
+				<h1>My MVC Application</h1>
+			</div>
+			@(Html.Telerik().Menu()
+					.Name("menu")
+					.Items(menu => {
+                        menu.Add().Text("AjaxLoadedValidation").Action("AjaxLoadedValidation", "Home");
+                        menu.Add().Text("IE8ValidationOlderJQuery").Action("IE8ValidationOlderJQuery", "Home");
+                        menu.Add().Text("IE8ValidationNewerJQuery").Action("IE8ValidationNewerJQuery", "Home");
+                        menu.Add().Text("HiddenInputsJQueryValidate1.9").Action("HiddenInputsJQueryValidate1_9", "Home");
+					}))
+		</header>
+		<section id="main">
+			@RenderBody()
+		</section>
+		<footer>
+		</footer>
+	</div>
+@(Html.Telerik().ScriptRegistrar().jQuery(false).jQueryValidation(false).DefaultGroup(group => group.Combined(true).Compress(true)))</body>
+</html>

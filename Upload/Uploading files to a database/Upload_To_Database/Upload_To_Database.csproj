@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{90DA0F39-DE0C-4F92-8803-F4041E61E5C2}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Upload_To_Database</RootNamespace>
+    <AssemblyName>Upload_To_Database</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.WebPages" />
+    <Reference Include="System.Web.Helpers" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Web.Mvc, Version=2011.1.224.340, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserFiles.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserFiles.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\2011.1.224\Black\editor.png" />
+    <Content Include="Content\2011.1.224\Black\imagebrowser.png" />
+    <Content Include="Content\2011.1.224\Black\loading.gif" />
+    <Content Include="Content\2011.1.224\Black\slider-h-both.gif" />
+    <Content Include="Content\2011.1.224\Black\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.224\Black\slider-h-top.gif" />
+    <Content Include="Content\2011.1.224\Black\slider-v-both.gif" />
+    <Content Include="Content\2011.1.224\Black\slider-v-left.gif" />
+    <Content Include="Content\2011.1.224\Black\slider-v-right.gif" />
+    <Content Include="Content\2011.1.224\Black\sprite-vertical.png" />
+    <Content Include="Content\2011.1.224\Black\sprite.png" />
+    <Content Include="Content\2011.1.224\Black\treeview-line.png" />
+    <Content Include="Content\2011.1.224\Black\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.224\Black\treeview-nodes.png" />
+    <Content Include="Content\2011.1.224\Default\editor.png" />
+    <Content Include="Content\2011.1.224\Default\imagebrowser.png" />
+    <Content Include="Content\2011.1.224\Default\loading.gif" />
+    <Content Include="Content\2011.1.224\Default\slider-h-both.gif" />
+    <Content Include="Content\2011.1.224\Default\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.224\Default\slider-h-top.gif" />
+    <Content Include="Content\2011.1.224\Default\slider-v-both.gif" />
+    <Content Include="Content\2011.1.224\Default\slider-v-left.gif" />
+    <Content Include="Content\2011.1.224\Default\slider-v-right.gif" />
+    <Content Include="Content\2011.1.224\Default\sprite-vertical.png" />
+    <Content Include="Content\2011.1.224\Default\sprite.png" />
+    <Content Include="Content\2011.1.224\Default\treeview-line.png" />
+    <Content Include="Content\2011.1.224\Default\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.224\Default\treeview-nodes.png" />
+    <Content Include="Content\2011.1.224\Forest\editor.png" />
+    <Content Include="Content\2011.1.224\Forest\imagebrowser.png" />
+    <Content Include="Content\2011.1.224\Forest\loading.gif" />
+    <Content Include="Content\2011.1.224\Forest\slider-h-both.gif" />
+    <Content Include="Content\2011.1.224\Forest\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.224\Forest\slider-h-top.gif" />
+    <Content Include="Content\2011.1.224\Forest\slider-v-both.gif" />
+    <Content Include="Content\2011.1.224\Forest\slider-v-left.gif" />
+    <Content Include="Content\2011.1.224\Forest\slider-v-right.gif" />
+    <Content Include="Content\2011.1.224\Forest\sprite-vertical.png" />
+    <Content Include="Content\2011.1.224\Forest\sprite.png" />
+    <Content Include="Content\2011.1.224\Forest\treeview-line.png" />
+    <Content Include="Content\2011.1.224\Forest\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.224\Forest\treeview-nodes.png" />
+    <Content Include="Content\2011.1.224\Hay\editor.png" />
+    <Content Include="Content\2011.1.224\Hay\imagebrowser.png" />
+    <Content Include="Content\2011.1.224\Hay\loading.gif" />
+    <Content Include="Content\2011.1.224\Hay\slider-h-both.gif" />
+    <Content Include="Content\2011.1.224\Hay\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.224\Hay\slider-h-top.gif" />
+    <Content Include="Content\2011.1.224\Hay\slider-v-both.gif" />
+    <Content Include="Content\2011.1.224\Hay\slider-v-left.gif" />
+    <Content Include="Content\2011.1.224\Hay\slider-v-right.gif" />
+    <Content Include="Content\2011.1.224\Hay\sprite-vertical.png" />
+    <Content Include="Content\2011.1.224\Hay\sprite.png" />
+    <Content Include="Content\2011.1.224\Hay\treeview-line.png" />
+    <Content Include="Content\2011.1.224\Hay\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.224\Hay\treeview-nodes.png" />
+    <Content Include="Content\2011.1.224\Office2007\editor.png" />
+    <Content Include="Content\2011.1.224\Office2007\imagebrowser.png" />
+    <Content Include="Content\2011.1.224\Office2007\loading.gif" />
+    <Content Include="Content\2011.1.224\Office2007\slider-h-both.gif" />
+    <Content Include="Content\2011.1.224\Office2007\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.224\Office2007\slider-h-top.gif" />
+    <Content Include="Content\2011.1.224\Office2007\slider-v-both.gif" />
+    <Content Include="Content\2011.1.224\Office2007\slider-v-left.gif" />
+    <Content Include="Content\2011.1.224\Office2007\slider-v-right.gif" />
+    <Content Include="Content\2011.1.224\Office2007\sprite-vertical.png" />
+    <Content Include="Content\2011.1.224\Office2007\sprite.png" />
+    <Content Include="Content\2011.1.224\Office2007\treeview-line.png" />
+    <Content Include="Content\2011.1.224\Office2007\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.224\Office2007\treeview-nodes.png" />
+    <Content Include="Content\2011.1.224\Outlook\editor.png" />
+    <Content Include="Content\2011.1.224\Outlook\imagebrowser.png" />
+    <Content Include="Content\2011.1.224\Outlook\loading.gif" />
+    <Content Include="Content\2011.1.224\Outlook\slider-h-both.gif" />
+    <Content Include="Content\2011.1.224\Outlook\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.224\Outlook\slider-h-top.gif" />
+    <Content Include="Content\2011.1.224\Outlook\slider-v-both.gif" />
+    <Content Include="Content\2011.1.224\Outlook\slider-v-left.gif" />
+    <Content Include="Content\2011.1.224\Outlook\slider-v-right.gif" />
+    <Content Include="Content\2011.1.224\Outlook\sprite-vertical.png" />
+    <Content Include="Content\2011.1.224\Outlook\sprite.png" />
+    <Content Include="Content\2011.1.224\Outlook\treeview-line.png" />
+    <Content Include="Content\2011.1.224\Outlook\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.224\Outlook\treeview-nodes.png" />
+    <Content Include="Content\2011.1.224\Simple\editor.png" />
+    <Content Include="Content\2011.1.224\Simple\imagebrowser.png" />
+    <Content Include="Content\2011.1.224\Simple\loading.gif" />
+    <Content Include="Content\2011.1.224\Simple\slider-h-both.gif" />
+    <Content Include="Content\2011.1.224\Simple\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.224\Simple\slider-h-top.gif" />
+    <Content Include="Content\2011.1.224\Simple\slider-v-both.gif" />
+    <Content Include="Content\2011.1.224\Simple\slider-v-left.gif" />
+    <Content Include="Content\2011.1.224\Simple\slider-v-right.gif" />
+    <Content Include="Content\2011.1.224\Simple\sprite-vertical.png" />
+    <Content Include="Content\2011.1.224\Simple\sprite.png" />
+    <Content Include="Content\2011.1.224\Simple\treeview-line.png" />
+    <Content Include="Content\2011.1.224\Simple\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.224\Simple\treeview-nodes.png" />
+    <Content Include="Content\2011.1.224\Sitefinity\editor.png" />
+    <Content Include="Content\2011.1.224\Sitefinity\imagebrowser.png" />
+    <Content Include="Content\2011.1.224\Sitefinity\loading.gif" />
+    <Content Include="Content\2011.1.224\Sitefinity\slider-h-both.gif" />
+    <Content Include="Content\2011.1.224\Sitefinity\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.224\Sitefinity\slider-h-top.gif" />
+    <Content Include="Content\2011.1.224\Sitefinity\slider-v-both.gif" />
+    <Content Include="Content\2011.1.224\Sitefinity\slider-v-left.gif" />
+    <Content Include="Content\2011.1.224\Sitefinity\slider-v-right.gif" />
+    <Content Include="Content\2011.1.224\Sitefinity\sprite-vertical.png" />
+    <Content Include="Content\2011.1.224\Sitefinity\sprite.png" />
+    <Content Include="Content\2011.1.224\Sitefinity\treeview-line.png" />
+    <Content Include="Content\2011.1.224\Sitefinity\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.224\Sitefinity\treeview-nodes.png" />
+    <Content Include="Content\2011.1.224\Sunset\editor.png" />
+    <Content Include="Content\2011.1.224\Sunset\imagebrowser.png" />
+    <Content Include="Content\2011.1.224\Sunset\loading.gif" />
+    <Content Include="Content\2011.1.224\Sunset\slider-h-both.gif" />
+    <Content Include="Content\2011.1.224\Sunset\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.224\Sunset\slider-h-top.gif" />
+    <Content Include="Content\2011.1.224\Sunset\slider-v-both.gif" />
+    <Content Include="Content\2011.1.224\Sunset\slider-v-left.gif" />
+    <Content Include="Content\2011.1.224\Sunset\slider-v-right.gif" />
+    <Content Include="Content\2011.1.224\Sunset\sprite-vertical.png" />
+    <Content Include="Content\2011.1.224\Sunset\sprite.png" />
+    <Content Include="Content\2011.1.224\Sunset\treeview-line.png" />
+    <Content Include="Content\2011.1.224\Sunset\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.224\Sunset\treeview-nodes.png" />
+    <Content Include="Content\2011.1.224\telerik.black.min.css" />
+    <Content Include="Content\2011.1.224\telerik.common.min.css" />
+    <Content Include="Content\2011.1.224\telerik.default.min.css" />
+    <Content Include="Content\2011.1.224\telerik.forest.min.css" />
+    <Content Include="Content\2011.1.224\telerik.hay.min.css" />
+    <Content Include="Content\2011.1.224\telerik.office2007.min.css" />
+    <Content Include="Content\2011.1.224\telerik.outlook.min.css" />
+    <Content Include="Content\2011.1.224\telerik.rtl.min.css" />
+    <Content Include="Content\2011.1.224\telerik.simple.min.css" />
+    <Content Include="Content\2011.1.224\telerik.sitefinity.min.css" />
+    <Content Include="Content\2011.1.224\telerik.sunset.min.css" />
+    <Content Include="Content\2011.1.224\telerik.telerik.min.css" />
+    <Content Include="Content\2011.1.224\telerik.vista.min.css" />
+    <Content Include="Content\2011.1.224\telerik.web20.min.css" />
+    <Content Include="Content\2011.1.224\telerik.webblue.min.css" />
+    <Content Include="Content\2011.1.224\telerik.windows7.min.css" />
+    <Content Include="Content\2011.1.224\Telerik\editor.png" />
+    <Content Include="Content\2011.1.224\Telerik\imagebrowser.png" />
+    <Content Include="Content\2011.1.224\Telerik\loading.gif" />
+    <Content Include="Content\2011.1.224\Telerik\slider-h-both.gif" />
+    <Content Include="Content\2011.1.224\Telerik\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.224\Telerik\slider-h-top.gif" />
+    <Content Include="Content\2011.1.224\Telerik\slider-v-both.gif" />
+    <Content Include="Content\2011.1.224\Telerik\slider-v-left.gif" />
+    <Content Include="Content\2011.1.224\Telerik\slider-v-right.gif" />
+    <Content Include="Content\2011.1.224\Telerik\sprite-vertical.png" />
+    <Content Include="Content\2011.1.224\Telerik\sprite.png" />
+    <Content Include="Content\2011.1.224\Telerik\treeview-line.png" />
+    <Content Include="Content\2011.1.224\Telerik\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.224\Telerik\treeview-nodes.png" />
+    <Content Include="Content\2011.1.224\Vista\editor.png" />
+    <Content Include="Content\2011.1.224\Vista\imagebrowser.png" />
+    <Content Include="Content\2011.1.224\Vista\loading.gif" />
+    <Content Include="Content\2011.1.224\Vista\slider-h-both.gif" />
+    <Content Include="Content\2011.1.224\Vista\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.224\Vista\slider-h-top.gif" />
+    <Content Include="Content\2011.1.224\Vista\slider-v-both.gif" />
+    <Content Include="Content\2011.1.224\Vista\slider-v-left.gif" />
+    <Content Include="Content\2011.1.224\Vista\slider-v-right.gif" />
+    <Content Include="Content\2011.1.224\Vista\sprite-vertical.png" />
+    <Content Include="Content\2011.1.224\Vista\sprite.png" />
+    <Content Include="Content\2011.1.224\Web20\editor.png" />
+    <Content Include="Content\2011.1.224\Web20\imagebrowser.png" />
+    <Content Include="Content\2011.1.224\Web20\loading.gif" />
+    <Content Include="Content\2011.1.224\Web20\slider-h-both.gif" />
+    <Content Include="Content\2011.1.224\Web20\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.224\Web20\slider-h-top.gif" />
+    <Content Include="Content\2011.1.224\Web20\slider-v-both.gif" />
+    <Content Include="Content\2011.1.224\Web20\slider-v-left.gif" />
+    <Content Include="Content\2011.1.224\Web20\slider-v-right.gif" />
+    <Content Include="Content\2011.1.224\Web20\sprite-vertical.png" />
+    <Content Include="Content\2011.1.224\Web20\sprite.png" />
+    <Content Include="Content\2011.1.224\Web20\treeview-line.png" />
+    <Content Include="Content\2011.1.224\Web20\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.224\Web20\treeview-nodes.png" />
+    <Content Include="Content\2011.1.224\WebBlue\editor.png" />
+    <Content Include="Content\2011.1.224\WebBlue\imagebrowser.png" />
+    <Content Include="Content\2011.1.224\WebBlue\loading.gif" />
+    <Content Include="Content\2011.1.224\WebBlue\slider-h-both.gif" />
+    <Content Include="Content\2011.1.224\WebBlue\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.224\WebBlue\slider-h-top.gif" />
+    <Content Include="Content\2011.1.224\WebBlue\slider-v-both.gif" />
+    <Content Include="Content\2011.1.224\WebBlue\slider-v-left.gif" />
+    <Content Include="Content\2011.1.224\WebBlue\slider-v-right.gif" />
+    <Content Include="Content\2011.1.224\WebBlue\sprite-vertical.png" />
+    <Content Include="Content\2011.1.224\WebBlue\sprite.png" />
+    <Content Include="Content\2011.1.224\WebBlue\treeview-line.png" />
+    <Content Include="Content\2011.1.224\WebBlue\treeview-nodes-rtl.png" />
+    <Content Include="Content\2011.1.224\WebBlue\treeview-nodes.png" />
+    <Content Include="Content\2011.1.224\Windows7\editor.png" />
+    <Content Include="Content\2011.1.224\Windows7\imagebrowser.png" />
+    <Content Include="Content\2011.1.224\Windows7\loading.gif" />
+    <Content Include="Content\2011.1.224\Windows7\slider-h-both.gif" />
+    <Content Include="Content\2011.1.224\Windows7\slider-h-bottom.gif" />
+    <Content Include="Content\2011.1.224\Windows7\slider-h-top.gif" />
+    <Content Include="Content\2011.1.224\Windows7\slider-v-both.gif" />
+    <Content Include="Content\2011.1.224\Windows7\slider-v-left.gif" />
+    <Content Include="Content\2011.1.224\Windows7\slider-v-right.gif" />
+    <Content Include="Content\2011.1.224\Windows7\sprite-vertical.png" />
+    <Content Include="Content\2011.1.224\Windows7\sprite.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\2011.1.224\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\2011.1.224\jquery.validate.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.autocomplete.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.calendar.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.combobox.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.common.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.datepicker.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.datetimepicker.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.draganddrop.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.editor.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.grid.editing.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.grid.filtering.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.grid.grouping.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.grid.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.grid.reordering.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.grid.resizing.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.imagebrowser.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.list.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.menu.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.panelbar.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.slider.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.splitter.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.tabstrip.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.textbox.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.timepicker.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.treeview.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.upload.min.js" />
+    <Content Include="Scripts\2011.1.224\telerik.window.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\UserFiles.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>UserFiles.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\UserFiles.dbml.layout">
+      <DependentUpon>UserFiles.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>21090</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

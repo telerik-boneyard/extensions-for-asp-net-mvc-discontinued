@@ -1,0 +1,6 @@
+C:\work\temp\tests\GridBindingToDataTableSample\GridBindingToDataTableSample\bin\GridBindingToDataTableSample.dll
+C:\work\temp\tests\GridBindingToDataTableSample\GridBindingToDataTableSample\bin\GridBindingToDataTableSample.pdb
+C:\work\temp\tests\GridBindingToDataTableSample\GridBindingToDataTableSample\bin\Telerik.Web.Mvc.xml
+C:\work\temp\tests\GridBindingToDataTableSample\GridBindingToDataTableSample\obj\Debug\ResolveAssemblyReference.cache
+C:\work\temp\tests\GridBindingToDataTableSample\GridBindingToDataTableSample\obj\Debug\GridBindingToDataTableSample.dll
+C:\work\temp\tests\GridBindingToDataTableSample\GridBindingToDataTableSample\obj\Debug\GridBindingToDataTableSample.pdb

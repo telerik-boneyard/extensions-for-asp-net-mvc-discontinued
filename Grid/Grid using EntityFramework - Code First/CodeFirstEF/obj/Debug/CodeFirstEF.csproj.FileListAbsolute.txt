@@ -1,0 +1,18 @@
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\CodeFirstEF\CodeFirstEF\bin\CodeFirstEF.dll
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\CodeFirstEF\CodeFirstEF\bin\CodeFirstEF.pdb
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\CodeFirstEF\CodeFirstEF\bin\EntityFramework.dll
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\CodeFirstEF\CodeFirstEF\bin\Telerik.Web.Mvc.dll
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\CodeFirstEF\CodeFirstEF\bin\EntityFramework.xml
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\CodeFirstEF\CodeFirstEF\bin\Telerik.Web.Mvc.pdb
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\CodeFirstEF\CodeFirstEF\bin\Telerik.Web.Mvc.xml
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\CodeFirstEF\CodeFirstEF\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\CodeFirstEF\CodeFirstEF\obj\Debug\CodeFirstEF.dll
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\CodeFirstEF\CodeFirstEF\obj\Debug\CodeFirstEF.pdb
+C:\Work\Support\Examples\CodeFirstEF\CodeFirstEF\bin\CodeFirstEF.dll
+C:\Work\Support\Examples\CodeFirstEF\CodeFirstEF\bin\CodeFirstEF.pdb
+C:\Work\Support\Examples\CodeFirstEF\CodeFirstEF\bin\EntityFramework.dll
+C:\Work\Support\Examples\CodeFirstEF\CodeFirstEF\bin\Telerik.Web.Mvc.dll
+C:\Work\Support\Examples\CodeFirstEF\CodeFirstEF\bin\EntityFramework.xml
+C:\Work\Support\Examples\CodeFirstEF\CodeFirstEF\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\Support\Examples\CodeFirstEF\CodeFirstEF\obj\Debug\CodeFirstEF.dll
+C:\Work\Support\Examples\CodeFirstEF\CodeFirstEF\obj\Debug\CodeFirstEF.pdb

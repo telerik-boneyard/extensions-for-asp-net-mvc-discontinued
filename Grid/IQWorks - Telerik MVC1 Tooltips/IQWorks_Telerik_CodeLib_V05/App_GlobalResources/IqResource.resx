@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="coAddress1" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="coAddress2" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="coCity" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="coCompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="coCompanyNo" xml:space="preserve">
+    <value>Company Number</value>
+  </data>
+  <data name="coContact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="coCreatedBy" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="coDateCreated" xml:space="preserve">
+    <value>Date Created</value>
+  </data>
+  <data name="coDateUpdated" xml:space="preserve">
+    <value>Date Updated</value>
+  </data>
+  <data name="coEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="coGroupCode" xml:space="preserve">
+    <value>Group Code</value>
+  </data>
+  <data name="coPhone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="coPostalCode" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="coProvince" xml:space="preserve">
+    <value>Province</value>
+  </data>
+  <data name="coSubscriberNo" xml:space="preserve">
+    <value>Subscriber Number</value>
+  </data>
+  <data name="coUpdatedBy" xml:space="preserve">
+    <value>Updated By</value>
+  </data>
+  <data name="Std_About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Std_CurrentSamples" xml:space="preserve">
+    <value>Current Examples &gt;</value>
+  </data>
+  <data name="Std_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Std_InformationQualityWorks" xml:space="preserve">
+    <value>Information Quality Works</value>
+  </data>
+  <data name="Std_Instructions" xml:space="preserve">
+    <value>&lt;br&gt;Select the tooltip scenerio you would like to see. </value>
+  </data>
+  <data name="Std_TelerikCodeLibContribution" xml:space="preserve">
+    <value>Telerik Code Lib Contribution - MVC1 2010.1.309</value>
+  </data>
+  <data name="Std_TooltipOverColumns" xml:space="preserve">
+    <value>Tootip Over Columns</value>
+  </data>
+  <data name="Std_Tooltips" xml:space="preserve">
+    <value>Tooltips</value>
+  </data>
+  <data name="Std_TooltipSamples" xml:space="preserve">
+    <value>Tooltip Samples</value>
+  </data>
+  <data name="Std_Toottips" xml:space="preserve">
+    <value>Tooltips</value>
+  </data>
+  <data name="Std_Version" xml:space="preserve">
+    <value>IQWorks Version 01.01.05</value>
+  </data>
+  <data name="greetHome" xml:space="preserve">
+    <value>
+&lt;p&gt;&lt;/p&gt;
+&lt;p class="iqParagraph"&gt;This is our small contribution to the Telerik Code Library and the Telerik community &lt;/p&gt;
+
+&lt;p  class="iqParagraph"&gt; We use Telerik MVC controls because they offer hundreds of different ways to code the UI and enhance the interactive user experience.&lt;/p&gt;
+
+&lt;p  class="iqParagraph"&gt; I get many benefits from seeing how others code and  use Telerik control properties, javascript, jQuery and CSS with Telerik controls. What helps alot is to see concrete examples of how these are implemented. &lt;/P&gt;
+
+&lt;p  class="iqParagraph"&gt;  If you see anything here that can be done differently, better or especially more efficiently, and you so desire,  please let us know so that we can upgrade our code for others who may use our contributions. &lt;/p&gt;
+
+&lt;p  class="iqParagraph"&gt; SHARE the knowledge, and , as we often see in our posts &lt;i&gt;" Hope this helps !"&lt;i/&gt; &lt;/p&gt;
+</value>
+  </data>
+  <data name="greetTooltips" xml:space="preserve">
+    <value>&lt;p&gt; Even though tooltips are easy to do, there are many ways to code them. This is just another technique we wanted to try. 
+&lt;A href="http://iqworkswp.wordpress.com/"&gt;Visit our IQWorks Telerik MVC Tooltip Blog !&lt;/A&gt;.&lt;br&gt;
+&lt;/p&gt;</value>
+  </data>
+  <data name="Std_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Std_TooltipFromData" xml:space="preserve">
+    <value>Tool tip from data</value>
+  </data>
+  <data name="Std_TooltipFromGrid" xml:space="preserve">
+    <value>Tooltip from Grid</value>
+  </data>
+  <data name="Std_AboutVerbiage" xml:space="preserve">
+    <value>&lt;p&gt; Hi  &lt;/p&gt;
+
+ &lt;p&gt;  My name is David C. Simmons. &lt;/p&gt; 
+
+ &lt;p&gt;  I am the lead .NET web application developer at Information Quality Works. &lt;/p&gt;       
+&lt;p&gt;   IQWorks has been around for over 15 years. &lt;/p&gt; 
+
+&lt;p&gt;   We started out as an IBM/AS400 consulting group, and like many others, included web development in the mid 90's.         
+ &lt;p&gt;   Our primary focus is on exercise and fitness web application 
+development.  However, we do provide standard business web application development and consulting and DotNetNuke installation support and module development. &lt;/p&gt;  
+              
+&lt;p&gt;   IQWorks has been using Telerik products since 2008. In 2009, we decided to commit ourselves to a certain set of tools for our ongoing web development These tools include .NET, C#, MSSQL, Entity Framework, JavaScript, jQuery, MVC and 
+Telerik.  While we are always open to change this tool set, we do believe this is a strong and viable tool set combination, and that this strategy will be around for a while. &lt;/p&gt; 
+  &lt;p&gt;     We have learned a lot from the Telerik community, forums and Telerik support. All has helped us tremendously in learning how to code and use Telerik products. We are not experts by any means, and, we have much to learn about all of the tools we have chosen, but in our humble way, we would like to “give back” so to speak. &lt;/p&gt;  
+  &lt;p&gt;    From sample code, we even come across code we could have used last week, or, 
+better, code to put aside for that page or functionality we will or may need 
+tomorrow. Examples help the learning curve. There are always many ways to code a solution, and many times I have seen different or new ways to code the same thing. This is a key because seeing new code gives us ideas to make our pages and 
+applications better. &lt;/p&gt; 
+  &lt;p&gt;    There is no example to small. There has been many times where even one code 
+block has made all the difference. &lt;/p&gt;
+  &lt;p&gt;    To this end, we would like to contribute to the Telerik MVC Code Library. We want to share our small code examples to help others, especially the new comer because we were new comers once. Our code is not profound or fancy; we try to keep things simple and practical. And there is always a way to make something simpler or more practical. &lt;/p&gt; 
+  &lt;p&gt;    We believe in Telerik because of the great UI experience they allow us to give to your users and because they are always moving forward. &lt;/p&gt;  
+
+   &lt;p&gt;   Thanks! &lt;/p&gt;</value>
+  </data>
+  <data name="Std_TooltipFromDataNotes" xml:space="preserve">
+    <value>&lt;p&gt; 1 - Regular hover dosnt work with ajax here. If you page forward
+            ,the next page will not pick up the hover. So, we use .live&lt;/p&gt; 
+       &lt;p&gt;  2 - .live dosnt work with "hover". The tooltip will stick and not 
+            get removed with standard hover coding. &lt;/p&gt; 
+       &lt;p&gt;  3 - .live works with mouseover and mouseout.&lt;/p&gt; 
+       &lt;p&gt;  4 - I use the variable "thisi" so that "this" can be accessed inside
+            the getJSON function &lt;/p&gt; 
+      &lt;p&gt;   5 - Included the main tooltip code WITHIN the getJSON function. Interesting 
+            issue here, it appears that javascript does not wait for getJSON (ajax
+            request) before it continues with the next line of javascript code after 
+            the getJSON function. This means that data will be null until the getJSON
+            function is totally finished. &lt;/p&gt; 
+      &lt;p&gt;   6 - For kicks, code this "class=".iqTooltip" instead of "class="iqTooltip" - 
+            this will read your data right into the cell. search for A1* &lt;/p&gt; 
+      &lt;p&gt;   7 - Using live seems to hold the bind to the grid, even when you leave one
+            grid and select one of the other two tabs.  &lt;/p&gt; 
+      &lt;p&gt;   8 - If you use more than one grid with these pieces of javascript in the 
+            same program as I have, be sure to make the mouseover class name (on this 
+            page that would be "iqNameTooltipD") unique on each page. This is neccessary
+             because in the case of these three
+            demos, there were three copies of these mouseover script functions in the 
+            rendered page, all with the same mouseover name. While switching back and 
+            forth between my three grids, I began noticing that each grid began running
+            all three scripts on mouseover causing the mouseover effects from all three 
+            java script functions to run on each grid page.&lt;/p&gt;</value>
+  </data>
+  <data name="Std_TooltipFromDataDoc" xml:space="preserve">
+    <value>&lt;br&gt;   &lt;p&gt;    Here are a few points of interest about this script, and some things I encountered during this project. &lt;/p&gt;     
+
+ &lt;p&gt; 1 - Regular hover didn't seem to work with ajax here because if you page forward, the next page will not pick up the hover. So, I tried to use .live with hover.&lt;/p&gt;   
+
+ &lt;p&gt; 2 - &lt;a href="http://api.jquery.com/live/"&gt;JQuery's .live&lt;/a&gt; doesn't seem to work well here with "hover". The tooltip will stick and not get removed with standard hover (handleIn/handleOut) coding. &lt;/p&gt;   
+
+3 - &lt;a href="http://api.jquery.com/live/"&gt;JQuery's .live&lt;/a&gt; works with mouseover/mouseout (and mouseenter/leave). I decided to use mouseover/out on the "Tooltip from data" because the added sensitivity worked better with our Tooltip.  The mouseenter/leave fire more directly on the main element you are trying to Tooltip for, but in IE,  the mouseover/out fired more consistantly.  We also tried .bind, and to me, this worked better for one or two of the desired effects of the Tooltip.  The problem with .bind was that it didn't seem to work once you did a page forward in our scenerio.  
+
+ &lt;p&gt; 4 - I use the variable "thisi" in the "Tooltip From Data" so that "this" can be accessed inside the getJSON function because once you are in the getJSON call back function the variable scope changes. In the callback function, 'this' refers to the getJSON callback function and no longer the scope of the mouseenter function. &lt;/p&gt; 
+
+ &lt;p&gt; 5 - In the "Tooltip From Data", I Included the main tooltip building code WITHIN the getJSON callback function rather than AFTER the getJSON call. Interesting issue here, it appears that JavaScript does not wait for getJSON (ajax request) to finish before it continues with the next line of JavaScript code after the getJSON &amp; callback function. This means that if you try to use getJSON callback data in any JavaScript that comes after the getJSON call, this data will be null. So, I coded the building of the tooltip right in the getJSON callback function to be sure I only built the tooltip when the getJSON call was done.&lt;/p&gt;  
+
+ &lt;p&gt; 6 - For kicks, code this in the "Tooltip From Data" ascx (if you have downloaded the project)  ... "class=".iqTooltip"  (notice the period before iqToolltip) instead of "class="iqTooltip" - this will read your data right into the cell instead of building a tooltip.  (free-be :-)  ) &lt;/p&gt;  
+
+ &lt;p&gt; 7 - If you use more than one grid (In my demo, I am using two, the "TooltipOverColumn.ascx" and the tooltipFromData.ascx"), then both mouseenter JavaScript code blocks will get loaded. So, if you have the SAME mouseenter class name (.iqNameTooltip for example) in both ascx files, then BOTH scripts will fire when you mouseenter the column, no matter which program you are in !! (just FYI). &lt;/p&gt;    
+
+ &lt;p&gt; 8 - In the "Tooltip From Data", the global variable "ajaxRequest" is used like this ... Every time the user runs his mouse on a company name, the mouseenter fires. I think When this happens, the getJSON is sent to the server and put on a queue (so to speak)to run on the same thread (on my dev server anyway) If the user runs his mouse over several company names, then several getJSON requests are on the queue. Now, after a getJSON request runs on the server, it will build and display a tooltip. With several getJSON calls all running one after the other, what you wind up with is a screen full of tooltips including the last one that your cursor is currently.  So, (and I know one of you out there know a better way to do this) I use the ajaxRequest to abort the last mouseenter getJSON request every time I do a new mouseenter. The bad (not to bad) part about this is,  if you run your mouse over a bunch of CompanyName's (I only have 10 per page actually),or, run your mouse over them several times, it causes a delay in presenting the final desired tooltip because all the previous ones have to be aborted one at a time. I am still refining this. &lt;/p&gt;  
+ &lt;p&gt;    I wanted to keep things as native (just jQuery &amp; JavaScript) as I could.  However, I did see a couple of things I want to try , namely getJSONP and hoverIntent .  HoverIntent looks interesting, it uses a timer to determine when the hover should fire - check it out. &lt;/p&gt;   
+
+ &lt;p&gt;    In a way, it seems (and I could be wrong) that the way "Tooltip From Data" program is coded, that it inadvertently mimics hoverIntent in that, you have to KEEP your cursor on the companyName (the mouseenter cell) long enough for the getJSON to fire AND return in order for the tooltip to get Built. This is because I holding onto the location of the cursor before the mouseenter is fired, and when the getJSON callback runs, the first thing I do is check to make sure the cursor is still somewhere inside that particular CompanName.  The hoverIntent as I said, uses a timer to make sure the user REALLY wants a tooltip for that element before it fires. In other words, because I use the ajaxRequest variable with ajaxRequest.abort, the only tooltip that will display(eventually) will be the last one the cursor is on, AS LONG as the user KEEPS the cursor on that cell. Ok, enough about all of that. &lt;/p&gt;     
+
+ &lt;p&gt; 9 -The next thing I noticed was that if I moved the mouse,  even quickly through a mouseenter element (CompanyName), that the getJSON for that CompanyName element would fire!! Man! This meant that if the user is just moving the mouse around, that every time they hit a CompanyName, the getJSON would fire and a tooltip would appear for the last CompanyName element swiped with the cursor. So, If the user is just moving the mouse around and didn’t intend to get a tooltip, this could be annoying.&lt;br /&gt;
+    So, I had to really do some work here. I had set things up so that the Tooltip would only get built if the cursor was still in the SAME CompanyName element that caused the getJSON to run, AND, when this getJSON request returned to run its callback function.  So that's what all the top, bottom, left and right stuff does. It defines the dimensions of the tooltip so that I can make sure that when the getJSON callback function is called, the user still has the cursor on the CompanyName they intend to see a tooltip for.&lt;br/&gt;  
+   An interesting note here, unless we saw this wrong, in IE, while moving the cursor upwards through the CompanyNames, the mouseenter would fire as soon as it hit the bottom of the ELEMENT the CompanyName occupied.  Our "bottom" position is calculated of off the bottom of the TEXT in the element. So, we just added 6px to this.&lt;br/&gt;
+   Lastly, the following lines of code may look weird .... &lt;br/&gt;
+    &amp;&amp; (G_elementTop &gt;= topSide)&lt;br/&gt;
+    &amp;&amp; (G_elementTop &lt;= bottomSide) &lt;br/&gt;
+ But keep in mind that a page numbers it's pixel position from the top of the page to the bottom. So, if we had an element at, lets say 200 and the bottom of the element was at 250.  Then  the current top (because we capture the top and left )  position of the cursor  (G_elementTop) must be between 200 and 250 in order to satisfy this block. &lt;/p&gt;   
+
+ &lt;p&gt; 10 - I love firebug.  Also, here is an inline debugging tool that I have to share. It creates a window on top of your browser (IE or FF) that will show you the debug data you specify everytime your javascript is run !  All you have to do is include it in your javascript and then you write lines like ...&lt;br/&gt;
+DBG(" test this " + yourVariable); &lt;br/&gt;
+, and everytime the script hits that line, it puts it in this window !&lt;br/&gt;
+ http://javascript-today.blogspot.com/2008/07/how-about-quick-debug-output-window.html .&lt;br/&gt; I also like the fact that you can even close your browser and the little window will stay open until you close it !&lt;/p&gt;   
+
+</value>
+  </data>
+  <data name="Std_TooltipOverColumnDoc" xml:space="preserve">
+    <value>&lt;p&gt; Here is some documentation for TooltipOverColumn.ascx.&lt;/p&gt;
+  
+     &lt;p&gt;1 - Regular hover dosen't seem to work with ajax here because if you page forward
+     ,the next page will not pick up the hover. , we tried to use .live with hover. &lt;/p&gt;
+
+     &lt;p&gt;2 - .live dosnt work well with "hover". The tooltip will stick and not 
+     get removed with standard hover (handleIn/handleOut) coding. &lt;/p&gt;
+ 
+    &lt;p&gt; 3 - .live works with mouseover/mouseout  
+     Mouseenter/leave fires more directly 
+     on the main element you are using to run the tooltip routine.
+     Mouseover/out can fire on elements related to the main element, as well as
+     the main element. (if I read my google searches correctly). &lt;/p&gt;</value>
+  </data>
+  <data name="Std_Revisions" xml:space="preserve">
+    <value>&lt;br&gt;&lt;br&gt;
+ 
+Revision History: &lt;br&gt;&lt;br&gt;
+01.01.01 * 03/24/2010 -&lt;br&gt; 
+1 - Initial Version. &lt;br&gt;&lt;br&gt;
+
+01.01.02 * 03/25/2010 - &lt;br&gt;
+1 -  
+&lt;A href="http://dotnetslackers.com/JavaScript/re-260035_Rich_Tooltips_With_jQuery.aspx"&gt;Acknowledgement to Scott Mitchell for his tooltip inspiration !&lt;/A&gt;.&lt;br&gt; 
+2 - Deleted uneeded ascx file.&lt;br&gt;&lt;br&gt;
+01.01.03 * 03/25/2010 - &lt;br&gt;
+1 - Intermittent error in Fire fox after clicking the browser toolbar Reload and then clicking tabs to reloading grids. Currently 
+being investigated.&lt;br&gt;&lt;br&gt;
+01.01.04 * 03/26/2010 - &lt;br&gt;
+1 - Add try catch to avert issue currently on a support ticket. 
+     Until the issue is totaly resolved, in the TooltipFromData the
+    first row (or others as well) may hesitate to show tooltip. this happens in IE, not noticed in firefox. 
+    If desired, see the try catch around the ajax.abort().&lt;br&gt; 
+2 - Removed console.log debug statement which causes error in IE. &lt;br&gt;&lt;br&gt;
+ 
+01.01.05 * 03/29/2010 -&lt;br&gt;
+1 - Leave Web.Config debug=true for developers.&lt;br&gt;
+2 - Web Asset management in site.css. search for iqMod0000&lt;br&gt;
+3 - Efficiency Mod - search for iqMod0001&lt;br&gt;
+4 - Icrease by 6 the pixels of the variable "bottom". Seems like when the 
+     cursor is moving upwards, that mouseenter fires at the bottom of the 
+     element, not the bottom of the text where. I need to calculate the dimensions
+     using the element and not the text.&lt;br&gt;
+5 - In  ajaxRequest.abort(), the readyState must not equal 4. A readyState
+     of 4 indicates that the getJSON process is complete. &lt;br&gt;
+6 - Changed to use mouseover/out - If the cursor is moved off of a displayed tooltip onto an adjacent CompanyName, that CompanyName's mouseenter will not fire. But, in IE, we found that mouseover/out fired more consistantly, so we changed to use that.&lt;br/&gt;  We tried using .bind with mouseenter/leave and it did fire when you moved the cursor from the Tooltip to an adjacent CompanyName, but .bind does not work here once you page forward
+&lt;br&gt; &lt;br&gt;
+
+
+
+
+</value>
+  </data>
+</root>

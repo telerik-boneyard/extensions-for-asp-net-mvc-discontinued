@@ -1,0 +1,16 @@
+C:\Users\Daniel\Documents\Visual Studio 2010\Projects\MVC\Validation\Validation\bin\Validation.dll
+C:\Users\Daniel\Documents\Visual Studio 2010\Projects\MVC\Validation\Validation\bin\Validation.pdb
+C:\Users\Daniel\Documents\Visual Studio 2010\Projects\MVC\Validation\Validation\bin\Telerik.Web.Mvc.dll
+C:\Users\Daniel\Documents\Visual Studio 2010\Projects\MVC\Validation\Validation\bin\Telerik.Web.Mvc.pdb
+C:\Users\Daniel\Documents\Visual Studio 2010\Projects\MVC\Validation\Validation\bin\Telerik.Web.Mvc.xml
+C:\Users\Daniel\Documents\Visual Studio 2010\Projects\MVC\Validation\Validation\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Daniel\Documents\Visual Studio 2010\Projects\MVC\Validation\Validation\obj\Debug\Validation.dll
+C:\Users\Daniel\Documents\Visual Studio 2010\Projects\MVC\Validation\Validation\obj\Debug\Validation.pdb
+C:\Users\karadachki\Desktop\Support\Validation\Validation\bin\Validation.dll
+C:\Users\karadachki\Desktop\Support\Validation\Validation\bin\Validation.pdb
+C:\Users\karadachki\Desktop\Support\Validation\Validation\bin\Telerik.Web.Mvc.dll
+C:\Users\karadachki\Desktop\Support\Validation\Validation\bin\Telerik.Web.Mvc.pdb
+C:\Users\karadachki\Desktop\Support\Validation\Validation\bin\Telerik.Web.Mvc.xml
+C:\Users\karadachki\Desktop\Support\Validation\Validation\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\karadachki\Desktop\Support\Validation\Validation\obj\Debug\Validation.dll
+C:\Users\karadachki\Desktop\Support\Validation\Validation\obj\Debug\Validation.pdb

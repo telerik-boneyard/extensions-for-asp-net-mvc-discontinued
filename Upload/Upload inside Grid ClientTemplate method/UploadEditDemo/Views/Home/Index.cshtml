@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>@ViewBag.Message</h2>
+
+
+@(Html.Telerik().Grid<UploadEditDemo.Models.Customer>()
+        .Name("Grid")
+        .Columns(columns =>
+        {
+            columns.Bound(c => c.CustomerID)
+                .ClientTemplate("<img width='100' height='110' alt='<#= CustomerID #>' src='"
+                    + Url.Content("~/Content/Customers/")
+                    + "<#= CustomerID #>.jpg' />" +
+                    Html.Telerik().Upload()
+                        .Name("attachments<#= CustomerID #>")
+                        .Async(async => async
+                            .Save("UploadImage", "Home",  "image"))
+                        .Multiple(false)
+                        .ShowFileList(false)
+                        .ClientEvents(events => events.OnSuccess("onSuccess").OnUpload("onUpload"))                        
+                        )
+
+                .Title("Picture");
+            columns.Bound(c => c.ContactName).Title("Name");
+            columns.Bound(c => c.Phone);
+        })
+        .DataBinding(dataBinding => dataBinding.Ajax().Select("GetCustomers", "Home"))
+        .Sortable()
+        .Scrollable()
+        .Pageable()
+ ) 
+
+<script type="text/javascript">
+    function onSuccess(e) {
+        $(this).prev().attr('src', e.response.relativeUrl);
+    }
+
+    function onUpload(e) {
+        var dataItem = $('#Grid').data('tGrid').dataItem($(this).closest('tr'));        
+        e.data = { customerID: dataItem.CustomerID };
+    }
+</script>

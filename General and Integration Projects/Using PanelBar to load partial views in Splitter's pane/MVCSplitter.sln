@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCSplitterWebForms", "MVCSplitter\MVCSplitterWebForms.csproj", "{BB752667-7A7E-439F-B3C4-01202A21DE83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCSplitterRazor", "MVCSplitterRazor\MVCSplitterRazor.csproj", "{B0D545A6-ADA4-4592-BEF0-BA60BF1E1440}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB752667-7A7E-439F-B3C4-01202A21DE83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB752667-7A7E-439F-B3C4-01202A21DE83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB752667-7A7E-439F-B3C4-01202A21DE83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB752667-7A7E-439F-B3C4-01202A21DE83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0D545A6-ADA4-4592-BEF0-BA60BF1E1440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0D545A6-ADA4-4592-BEF0-BA60BF1E1440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0D545A6-ADA4-4592-BEF0-BA60BF1E1440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0D545A6-ADA4-4592-BEF0-BA60BF1E1440}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

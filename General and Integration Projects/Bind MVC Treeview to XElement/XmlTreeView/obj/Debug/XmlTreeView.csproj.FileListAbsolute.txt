@@ -1,0 +1,7 @@
+C:\Projects\Telerik\XmlTreeView\XmlTreeView\bin\XmlTreeView.dll
+C:\Projects\Telerik\XmlTreeView\XmlTreeView\bin\XmlTreeView.pdb
+C:\Projects\Telerik\XmlTreeView\XmlTreeView\bin\Telerik.Web.Mvc.dll
+C:\Projects\Telerik\XmlTreeView\XmlTreeView\bin\Telerik.Web.Mvc.xml
+C:\Projects\Telerik\XmlTreeView\XmlTreeView\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Telerik\XmlTreeView\XmlTreeView\obj\Debug\XmlTreeView.dll
+C:\Projects\Telerik\XmlTreeView\XmlTreeView\obj\Debug\XmlTreeView.pdb

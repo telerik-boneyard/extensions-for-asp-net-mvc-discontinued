@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>@ViewBag.Message</h2>
+
+
+@Html.ActionLink("Export to Excel", "Export", new { page = 1, orderBy = "~", filter = "~" }, new { id = "exportLink" })
+
+@model IEnumerable<GridExcelExport.Models.Order>
+
+@(Html.Telerik().Grid(Model)
+            .Name("Grid")
+            .Columns(columns =>
+            {
+                columns.Bound(o => o.OrderID);
+                columns.Bound(o => o.ShipAddress);
+                columns.Bound(o => o.CustomerID);
+                columns.Bound(o => o.ShipCountry);
+                columns.Bound(o => o.OrderDate);
+            })
+            .Pageable()
+            .Sortable()
+            .Filterable()
+            .DataBinding(dataBinding => dataBinding
+                .Ajax()
+                    .Select("IndexAjax", "Home"))
+            .ClientEvents(events => events.OnDataBound("onDataBound"))
+ )
+
+ <script type="text/javascript">
+     function onDataBound() {
+         var grid = $(this).data('tGrid');
+         var $exportLink = $('#exportLink');
+         var href = $exportLink.attr('href');
+         href = href.replace(/page=([^&]*)/, 'page=' + grid.currentPage);
+         href = href.replace(/orderBy=([^&]*)/, 'orderBy=' + (grid.orderBy || '~'));
+         href = href.replace(/filter=(.*)/, 'filter=' + (grid.filterBy || '~'));
+         $exportLink.attr('href', href);
+     }
+</script>

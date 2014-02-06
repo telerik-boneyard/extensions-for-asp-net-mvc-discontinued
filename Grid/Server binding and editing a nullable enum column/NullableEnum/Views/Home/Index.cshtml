@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>@ViewBag.Message</h2>
+
+@using NullableEnum.Models
+
+@(Html.Telerik().Grid<Person>((IEnumerable<Person>)Model)
+    .Name("Persons")
+    .DataBinding(binding=> binding.Server().Select("Index","Home").Update("UpdatePerson","Home"))
+        .Columns(cols =>
+        {
+            cols.Bound(p => p.PersonID).Hidden();
+            cols.Bound(p => p.Name).Width(150);
+            cols.Bound(p => p.DateOfBirth).Width(200);
+            cols.Bound(m => m.UserRole).Width(200)
+                .Template(@<text><p><strong>
+                    @if (item.UserRole.HasValue)
+                    {
+                        @Html.DisplayFor(m => item.UserRole.Value, "Status")
+                    }
+                </strong></p></text>)
+                .Title("User Role");
+            cols.Command(cmd => cmd.Edit());
+        })
+        .Filterable()
+    .DataKeys(keys=>keys.Add(p=>p.PersonID))
+    
+)

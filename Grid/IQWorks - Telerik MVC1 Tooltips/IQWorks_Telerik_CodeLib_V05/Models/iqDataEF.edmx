@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="iqDataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityContainer Name="iqDataModelStoreContainer">
+          <EntitySet Name="iqCompany" EntityType="iqDataModel.Store.iqCompany" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="iqCompany">
+          <Key>
+            <PropertyRef Name="coCompanyNo" />
+          </Key>
+          <Property Name="coCompanyNo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="coCompanyName" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="coAddress1" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="coAddress2" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="coCity" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="coProvince" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="coPostalCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="coPhone" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="coContact" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="coEmail" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="coGroupCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="coCreatedBy" Type="int" Nullable="false" />
+          <Property Name="coUpdatedBy" Type="int" Nullable="false" />
+          <Property Name="coSubscriberNo" Type="int" Nullable="false" />
+          <Property Name="coDateCreated" Type="datetime" Nullable="false" />
+          <Property Name="coDateUpdated" Type="datetime" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="iqDataModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="iqDataEntities">
+          <EntitySet Name="iqCompany" EntityType="iqDataModel.iqCompany" />
+        </EntityContainer>
+        <EntityType Name="iqCompany">
+          <Key>
+            <PropertyRef Name="coCompanyNo" />
+          </Key>
+          <Property Name="coCompanyNo" Type="Int32" Nullable="false" />
+          <Property Name="coCompanyName" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="coAddress1" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="coAddress2" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="coCity" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="coProvince" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="coPostalCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="coPhone" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="coContact" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="coEmail" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="coGroupCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="coCreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="coUpdatedBy" Type="Int32" Nullable="false" />
+          <Property Name="coSubscriberNo" Type="Int32" Nullable="false" />
+          <Property Name="coDateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="coDateUpdated" Type="DateTime" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="iqDataModelStoreContainer" CdmEntityContainer="iqDataEntities">
+          <EntitySetMapping Name="iqCompany">
+            <EntityTypeMapping TypeName="IsTypeOf(iqDataModel.iqCompany)">
+              <MappingFragment StoreEntitySet="iqCompany">
+                <ScalarProperty Name="coCompanyNo" ColumnName="coCompanyNo" />
+                <ScalarProperty Name="coCompanyName" ColumnName="coCompanyName" />
+                <ScalarProperty Name="coAddress1" ColumnName="coAddress1" />
+                <ScalarProperty Name="coAddress2" ColumnName="coAddress2" />
+                <ScalarProperty Name="coCity" ColumnName="coCity" />
+                <ScalarProperty Name="coProvince" ColumnName="coProvince" />
+                <ScalarProperty Name="coPostalCode" ColumnName="coPostalCode" />
+                <ScalarProperty Name="coPhone" ColumnName="coPhone" />
+                <ScalarProperty Name="coContact" ColumnName="coContact" />
+                <ScalarProperty Name="coEmail" ColumnName="coEmail" />
+                <ScalarProperty Name="coGroupCode" ColumnName="coGroupCode" />
+                <ScalarProperty Name="coCreatedBy" ColumnName="coCreatedBy" />
+                <ScalarProperty Name="coUpdatedBy" ColumnName="coUpdatedBy" />
+                <ScalarProperty Name="coSubscriberNo" ColumnName="coSubscriberNo" />
+                <ScalarProperty Name="coDateCreated" ColumnName="coDateCreated" />
+                <ScalarProperty Name="coDateUpdated" ColumnName="coDateUpdated" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="iqDataEF">
+        <EntityTypeShape EntityType="iqDataModel.iqCompany" Width="1.5" PointX="0.75" PointY="0.75" Height="3.5644742838541665" IsExpanded="true" /></Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

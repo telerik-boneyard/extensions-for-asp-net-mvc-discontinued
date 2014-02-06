@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Sync upload with client validation";
+}
+
+@using (Html.BeginForm("ProcessSubmit", "SyncUpload",
+                         FormMethod.Post, new { id = "uploadForm", enctype = "multipart/form-data" })) { 
+    @(Html.Telerik().Upload()
+            .Name("attachments")
+    )
+    
+    <div style="margin: 20px 0 0 4px;">
+        <input type="submit" value="Send" class="t-button" />
+    </div>
+ } 
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#uploadForm").validate({
+            rules: {
+                attachments: {
+                    required: true
+                }
+            },
+            messages: {
+                attachments: {
+                    required: "Attachment required"
+                }
+            }
+        });
+    });
+</script>

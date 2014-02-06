@@ -1,0 +1,18 @@
+C:\work\temp\tests\GridBindingToDataTableSample\GridBindingToDataTableSample\bin\GridBindingToDataTableSample.dll
+C:\work\temp\tests\GridBindingToDataTableSample\GridBindingToDataTableSample\bin\GridBindingToDataTableSample.pdb
+C:\work\temp\tests\GridBindingToDataTableSample\GridBindingToDataTableSample\bin\Telerik.Web.Mvc.xml
+C:\work\temp\tests\GridBindingToDataTableSample\GridBindingToDataTableSample\obj\Debug\ResolveAssemblyReference.cache
+C:\work\temp\tests\GridBindingToDataTableSample\GridBindingToDataTableSample\obj\Debug\GridBindingToDataTableSample.dll
+C:\work\temp\tests\GridBindingToDataTableSample\GridBindingToDataTableSample\obj\Debug\GridBindingToDataTableSample.pdb
+C:\Users\korchev\Desktop\Support\GridBindingToDataTableSample\bin\GridBindingToDataTableSample.dll
+C:\Users\korchev\Desktop\Support\GridBindingToDataTableSample\bin\GridBindingToDataTableSample.pdb
+C:\Users\korchev\Desktop\Support\GridBindingToDataTableSample\bin\Telerik.Web.Mvc.xml
+C:\Users\korchev\Desktop\Support\GridBindingToDataTableSample\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\korchev\Desktop\Support\GridBindingToDataTableSample\obj\Debug\GridBindingToDataTableSample.dll
+C:\Users\korchev\Desktop\Support\GridBindingToDataTableSample\obj\Debug\GridBindingToDataTableSample.pdb
+C:\work\temp\client files\297484_BindingToDataTable\GridBindingToDataTableSample\bin\GridBindingToDataTableSample.dll
+C:\work\temp\client files\297484_BindingToDataTable\GridBindingToDataTableSample\bin\GridBindingToDataTableSample.pdb
+C:\work\temp\client files\297484_BindingToDataTable\GridBindingToDataTableSample\bin\Telerik.Web.Mvc.xml
+C:\work\temp\client files\297484_BindingToDataTable\GridBindingToDataTableSample\obj\Debug\ResolveAssemblyReference.cache
+C:\work\temp\client files\297484_BindingToDataTable\GridBindingToDataTableSample\obj\Debug\GridBindingToDataTableSample.dll
+C:\work\temp\client files\297484_BindingToDataTable\GridBindingToDataTableSample\obj\Debug\GridBindingToDataTableSample.pdb

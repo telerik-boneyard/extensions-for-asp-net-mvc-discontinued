@@ -1,0 +1,51 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    
+    <%= Html.Telerik().StyleSheetRegistrar()
+                      .DefaultGroup(group =>
+                            group.Add("Site.css")
+                                 .Add("telerik.common.css")
+                                 .Add("telerik.vista.css")
+                                 .Combined(true))
+    %>
+</head>
+
+<body>
+    <div class="page">
+
+        <div id="header">
+            <div id="title">
+                <h1>My MVC Application</h1>
+            </div>
+              
+            <div id="logindisplay">
+                <% Html.RenderPartial("LogOnUserControl"); %>
+            </div> 
+            
+            <div id="menucontainer">
+            
+                <ul id="menu">              
+                    <li><%= Html.ActionLink("Home", MVC.Home.Index())%></li>
+                    <li><%= Html.ActionLink("About", MVC.Home.About())%></li>
+                </ul>
+            
+            </div>
+        </div>
+
+        <div id="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+            <div id="footer">
+            </div>
+        </div>
+    </div>
+    
+    <% Html.Telerik().ScriptRegistrar()
+                     .DefaultGroup(group => group.Combined(true).Compress(true))
+                     .Render(); %>
+</body>
+</html>

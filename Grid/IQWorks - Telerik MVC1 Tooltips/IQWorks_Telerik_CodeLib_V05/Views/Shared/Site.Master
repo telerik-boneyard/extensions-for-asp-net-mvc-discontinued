@@ -1,0 +1,99 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+   <script src="../../Scripts/MicrosoftAjax.debug.js" type="text/javascript"></script>
+    <script src="../../Scripts/MicrosoftMvcAjax.debug.js" type="text/javascript"></script>
+    
+  
+<%= Html.Telerik().StyleSheetRegistrar()                       
+.DefaultGroup(group => group.Add("Site.css")                                                  
+.Add("telerik.common.css") 
+.Add("telerik.hay.css")
+.Add("iqStandards.css")                                                   
+.Combined(true)                                  
+) %> 
+
+</head>
+
+<body style="background-color:#352f85;">
+
+
+    <div class="page" style="margin-top:35px; " >
+   <!-- atcorners -->
+
+   <!-- btcorners -->
+        <div id="header"  > 
+        <table width="100%" > 
+        <tr> 
+        <td style="border-width: 0px;" >  
+         <div style="float:left;margin-bottom:0px;margin-Bottom:300; font-family: Tahoma;">
+                <label style="font-size: xx-large; padding-bottom:30;color:#352f85;"><%=Resources.IqResource.Std_InformationQualityWorks%></label> 
+          
+            </div>
+            </td> 
+            <td align="center" style="font-weight:bold;border-width: 0px;color:#352f85">
+            <div>
+            <%=Html.ActionLink(Resources.IqResource.Std_Version, "Revisions", "Home")%>
+            </div>
+            </td>
+            </tr>
+            <tr >
+                       
+            
+             <td style="border-width: 0px;">
+             <label style="font-size:large; padding-bottom:10;"><%=Resources.IqResource.Std_TelerikCodeLibContribution%></label> 
+             </td>
+             <td style="border-width: 0px;">
+             <div> 
+                <ul id="menu" >
+                    
+                    <li><%= Html.ActionLink( Resources.IqResource.Std_Home , "Index", "Home")%></li>
+                    <li><%= Html.ActionLink(Resources.IqResource.Std_About, "About", "Home")%></li>
+                     <li><%= Html.ActionLink(Resources.IqResource.Std_Tooltips, "Index", "Tooltips")%></li>
+                </ul>
+                </div> 
+              </td>
+             </tr>
+            
+            </table>
+          
+        </div>
+  <!-- tcorners -->
+           
+  <!-- bcorners -->
+        <div id="main" >
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+           
+        </div>
+         <div id="footer" style="margin-top:10px;" >
+            </div>
+    </div>
+    <%= Html.Telerik().ScriptRegistrar()
+                   .DefaultGroup(group => group
+                   .Add("jquery.validate.js")
+                   .Add("telerik.common.js")
+                   .Add("telerik.grid.js")
+                   .Add("telerik.grid.filtering.js")
+                   .Add("telerik.datepicker.min.js")
+                   .Add("telerik.calendar.min.js")
+                   .Combined(true) // iqMod0000
+                   .Compress(true) // iqMod0000
+
+                       )   %> 
+                   
+                  
+</body>
+
+ 
+</html>
+<style type="text/css">
+   
+
+ 
+</style>
+  

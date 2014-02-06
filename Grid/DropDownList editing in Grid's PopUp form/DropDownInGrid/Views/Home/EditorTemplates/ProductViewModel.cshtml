@@ -1,0 +1,11 @@
+﻿@model DropDownInGrid.Models.ProductViewModel
+<ul>
+    <li>@Html.LabelFor(m => m.ProductName)
+        @Html.EditorFor(m => m.ProductName)
+        @Html.ValidationMessageFor(m => m.ProductName)
+    </li>
+    <li>
+        @Html.LabelFor(m => m.CategoryName)
+        @Html.DropDownListFor(x => x.CategoryID, new SelectList(ViewBag.Categories, "CategoryID", "CategoryName"))
+    </li>
+</ul>

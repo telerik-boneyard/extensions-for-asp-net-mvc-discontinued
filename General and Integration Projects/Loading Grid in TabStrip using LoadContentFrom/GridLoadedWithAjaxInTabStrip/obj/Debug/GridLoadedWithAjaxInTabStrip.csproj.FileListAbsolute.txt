@@ -1,0 +1,7 @@
+c:\users\korchev\documents\visual studio 2010\Projects\GridLoadedWithAjaxInTabStrip\GridLoadedWithAjaxInTabStrip\bin\GridLoadedWithAjaxInTabStrip.dll
+c:\users\korchev\documents\visual studio 2010\Projects\GridLoadedWithAjaxInTabStrip\GridLoadedWithAjaxInTabStrip\bin\GridLoadedWithAjaxInTabStrip.pdb
+c:\users\korchev\documents\visual studio 2010\Projects\GridLoadedWithAjaxInTabStrip\GridLoadedWithAjaxInTabStrip\bin\Telerik.Web.Mvc.dll
+c:\users\korchev\documents\visual studio 2010\Projects\GridLoadedWithAjaxInTabStrip\GridLoadedWithAjaxInTabStrip\bin\Telerik.Web.Mvc.xml
+c:\users\korchev\documents\visual studio 2010\Projects\GridLoadedWithAjaxInTabStrip\GridLoadedWithAjaxInTabStrip\obj\Debug\ResolveAssemblyReference.cache
+c:\users\korchev\documents\visual studio 2010\Projects\GridLoadedWithAjaxInTabStrip\GridLoadedWithAjaxInTabStrip\obj\Debug\GridLoadedWithAjaxInTabStrip.dll
+c:\users\korchev\documents\visual studio 2010\Projects\GridLoadedWithAjaxInTabStrip\GridLoadedWithAjaxInTabStrip\obj\Debug\GridLoadedWithAjaxInTabStrip.pdb

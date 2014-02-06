@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A461FAE5-4FCF-4100-B306-D0594DC2F365}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GridToPdfExport</RootNamespace>
+    <AssemblyName>GridToPdfExport</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>GridToPdfExport.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>GridToPdfExport.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.Mvc, Version=2010.2.713.235, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Mvc" />
+    <Import Include="System.Web.Mvc.Ajax" />
+    <Import Include="System.Web.Mvc.Html" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Customer\ICustomer.vb" />
+    <Compile Include="Models\Customer\SqlCustomer.vb" />
+    <Compile Include="Models\DbContext.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbContext.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controllers\AccountController.vb" />
+    <Compile Include="Controllers\HomeController.vb" />
+    <Compile Include="Models\AccountModels.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\DbContext.dbml.layout">
+      <DependentUpon>DbContext.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\DbContext.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DbContext.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Northwind.mdf" />
+    <Content Include="App_Data\Northwind_log.ldf">
+      <DependentUpon>Northwind.mdf</DependentUpon>
+    </Content>
+    <Content Include="Content\2010.3.1116\Black\editor.png" />
+    <Content Include="Content\2010.3.1116\Black\loading.gif" />
+    <Content Include="Content\2010.3.1116\Black\sprite.png" />
+    <Content Include="Content\2010.3.1116\Black\treeview-line.png" />
+    <Content Include="Content\2010.3.1116\Black\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1116\Black\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1116\Default\editor.png" />
+    <Content Include="Content\2010.3.1116\Default\loading.gif" />
+    <Content Include="Content\2010.3.1116\Default\sprite.png" />
+    <Content Include="Content\2010.3.1116\Default\treeview-line.png" />
+    <Content Include="Content\2010.3.1116\Default\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1116\Default\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1116\Forest\editor.png" />
+    <Content Include="Content\2010.3.1116\Forest\loading.gif" />
+    <Content Include="Content\2010.3.1116\Forest\sprite.png" />
+    <Content Include="Content\2010.3.1116\Forest\treeview-line.png" />
+    <Content Include="Content\2010.3.1116\Forest\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1116\Forest\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1116\Hay\editor.png" />
+    <Content Include="Content\2010.3.1116\Hay\loading.gif" />
+    <Content Include="Content\2010.3.1116\Hay\sprite.png" />
+    <Content Include="Content\2010.3.1116\Hay\treeview-line.png" />
+    <Content Include="Content\2010.3.1116\Hay\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1116\Hay\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1116\Office2007\editor.png" />
+    <Content Include="Content\2010.3.1116\Office2007\loading.gif" />
+    <Content Include="Content\2010.3.1116\Office2007\sprite.png" />
+    <Content Include="Content\2010.3.1116\Office2007\treeview-line.png" />
+    <Content Include="Content\2010.3.1116\Office2007\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1116\Office2007\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1116\Outlook\editor.png" />
+    <Content Include="Content\2010.3.1116\Outlook\loading.gif" />
+    <Content Include="Content\2010.3.1116\Outlook\sprite.png" />
+    <Content Include="Content\2010.3.1116\Outlook\treeview-line.png" />
+    <Content Include="Content\2010.3.1116\Outlook\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1116\Outlook\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1116\Simple\editor.png" />
+    <Content Include="Content\2010.3.1116\Simple\loading.gif" />
+    <Content Include="Content\2010.3.1116\Simple\sprite.png" />
+    <Content Include="Content\2010.3.1116\Simple\treeview-line.png" />
+    <Content Include="Content\2010.3.1116\Simple\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1116\Simple\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1116\Sitefinity\editor.png" />
+    <Content Include="Content\2010.3.1116\Sitefinity\loading.gif" />
+    <Content Include="Content\2010.3.1116\Sitefinity\sprite.png" />
+    <Content Include="Content\2010.3.1116\Sitefinity\treeview-line.png" />
+    <Content Include="Content\2010.3.1116\Sitefinity\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1116\Sitefinity\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1116\Sunset\editor.png" />
+    <Content Include="Content\2010.3.1116\Sunset\loading.gif" />
+    <Content Include="Content\2010.3.1116\Sunset\sprite.png" />
+    <Content Include="Content\2010.3.1116\Sunset\treeview-line.png" />
+    <Content Include="Content\2010.3.1116\Sunset\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1116\Sunset\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1116\telerik.black.min.css" />
+    <Content Include="Content\2010.3.1116\telerik.common.min.css" />
+    <Content Include="Content\2010.3.1116\telerik.default.min.css" />
+    <Content Include="Content\2010.3.1116\telerik.forest.min.css" />
+    <Content Include="Content\2010.3.1116\telerik.hay.min.css" />
+    <Content Include="Content\2010.3.1116\telerik.office2007.min.css" />
+    <Content Include="Content\2010.3.1116\telerik.outlook.min.css" />
+    <Content Include="Content\2010.3.1116\telerik.rtl.min.css" />
+    <Content Include="Content\2010.3.1116\telerik.simple.min.css" />
+    <Content Include="Content\2010.3.1116\telerik.sitefinity.min.css" />
+    <Content Include="Content\2010.3.1116\telerik.sunset.min.css" />
+    <Content Include="Content\2010.3.1116\telerik.telerik.min.css" />
+    <Content Include="Content\2010.3.1116\telerik.vista.min.css" />
+    <Content Include="Content\2010.3.1116\telerik.web20.min.css" />
+    <Content Include="Content\2010.3.1116\telerik.webblue.min.css" />
+    <Content Include="Content\2010.3.1116\telerik.windows7.min.css" />
+    <Content Include="Content\2010.3.1116\Telerik\editor.png" />
+    <Content Include="Content\2010.3.1116\Telerik\loading.gif" />
+    <Content Include="Content\2010.3.1116\Telerik\sprite.png" />
+    <Content Include="Content\2010.3.1116\Telerik\treeview-line.png" />
+    <Content Include="Content\2010.3.1116\Telerik\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1116\Telerik\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1116\Vista\editor.png" />
+    <Content Include="Content\2010.3.1116\Vista\loading.gif" />
+    <Content Include="Content\2010.3.1116\Vista\sprite.png" />
+    <Content Include="Content\2010.3.1116\Web20\editor.png" />
+    <Content Include="Content\2010.3.1116\Web20\loading.gif" />
+    <Content Include="Content\2010.3.1116\Web20\sprite.png" />
+    <Content Include="Content\2010.3.1116\Web20\treeview-line.png" />
+    <Content Include="Content\2010.3.1116\Web20\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1116\Web20\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1116\WebBlue\editor.png" />
+    <Content Include="Content\2010.3.1116\WebBlue\loading.gif" />
+    <Content Include="Content\2010.3.1116\WebBlue\sprite.png" />
+    <Content Include="Content\2010.3.1116\WebBlue\treeview-line.png" />
+    <Content Include="Content\2010.3.1116\WebBlue\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1116\WebBlue\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1116\Windows7\editor.png" />
+    <Content Include="Content\2010.3.1116\Windows7\loading.gif" />
+    <Content Include="Content\2010.3.1116\Windows7\sprite.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\2010.3.1116\jquery-1.4.3.min.js" />
+    <Content Include="Scripts\2010.3.1116\jquery.validate.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.autocomplete.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.calendar.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.combobox.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.common.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.datepicker.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.datetimepicker.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.draganddrop.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.editor.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.grid.editing.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.grid.filtering.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.grid.grouping.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.grid.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.grid.reordering.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.grid.resizing.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.list.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.menu.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.panelbar.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.tabstrip.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.textbox.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.timepicker.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.treeview.min.js" />
+    <Content Include="Scripts\2010.3.1116\telerik.window.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Account\ChangePassword.aspx" />
+    <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Views\Account\LogOn.aspx" />
+    <Content Include="Views\Account\Register.aspx" />
+    <Content Include="Views\Home\About.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8466</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/GridToPdfExport</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

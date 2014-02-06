@@ -1,0 +1,7 @@
+c:\work\MVCSplitter\MVCSplitterRazor\bin\MVCSplitterRazor.dll
+c:\work\MVCSplitter\MVCSplitterRazor\bin\MVCSplitterRazor.pdb
+c:\work\MVCSplitter\MVCSplitterRazor\obj\Debug\ResolveAssemblyReference.cache
+c:\work\MVCSplitter\MVCSplitterRazor\obj\Debug\MVCSplitterRazor.dll
+c:\work\MVCSplitter\MVCSplitterRazor\obj\Debug\MVCSplitterRazor.pdb
+c:\work\MVCSplitter\MVCSplitterRazor\bin\Telerik.Web.Mvc.dll
+c:\work\MVCSplitter\MVCSplitterRazor\bin\Telerik.Web.Mvc.xml

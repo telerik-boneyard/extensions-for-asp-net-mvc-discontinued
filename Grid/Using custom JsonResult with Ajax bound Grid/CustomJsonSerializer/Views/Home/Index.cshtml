@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Too Large Data Page";
+}
+
+<h2>
+Page with too much data
+</h2>
+
+@(Html.Telerik().Grid<CustomJsonSerializer.Models.Product>()
+              .Name("Products")
+              .Scrollable()
+              .Sortable()
+              .DataBinding(dataBinding => dataBinding.Ajax().Select("_Select", "Home"))
+)

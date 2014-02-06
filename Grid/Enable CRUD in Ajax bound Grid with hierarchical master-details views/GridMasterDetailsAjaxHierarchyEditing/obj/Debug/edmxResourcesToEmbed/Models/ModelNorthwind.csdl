@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NORTHWNDModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="NorthwindEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Order_Details" EntityType="NORTHWNDModel.Order_Detail" />
+    <EntitySet Name="Orders" EntityType="NORTHWNDModel.Order" />
+    <AssociationSet Name="FK_Order_Details_Orders" Association="NORTHWNDModel.FK_Order_Details_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="Order_Details" EntitySet="Order_Details" />
+    </AssociationSet>
+    <EntitySet Name="Employees" EntityType="NORTHWNDModel.Employee" />
+    <AssociationSet Name="FK_Employees_Employees" Association="NORTHWNDModel.FK_Employees_Employees">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Employee1" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Employees" Association="NORTHWNDModel.FK_Orders_Employees">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <EntitySet Name="Products" EntityType="NORTHWNDModel.Product" />
+    <AssociationSet Name="FK_Order_Details_Products" Association="NORTHWNDModel.FK_Order_Details_Products">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Order_Detail" EntitySet="Order_Details" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Order_Detail">
+    <Key>
+      <PropertyRef Name="OrderID" />
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="OrderID" Type="Int32" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="UnitPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Quantity" Type="Int16" Nullable="false" />
+    <Property Name="Discount" Type="Single" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="NORTHWNDModel.FK_Order_Details_Orders" FromRole="Order_Details" ToRole="Orders" />
+    <NavigationProperty Name="Product" Relationship="NORTHWNDModel.FK_Order_Details_Products" FromRole="Order_Detail" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerID" Type="String" MaxLength="5" Unicode="true" FixedLength="true" />
+    <Property Name="EmployeeID" Type="Int32" />
+    <Property Name="OrderDate" Type="DateTime" />
+    <Property Name="RequiredDate" Type="DateTime" />
+    <Property Name="ShippedDate" Type="DateTime" />
+    <Property Name="ShipVia" Type="Int32" />
+    <Property Name="Freight" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ShipName" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ShipAddress" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="ShipCity" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="ShipRegion" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="ShipPostalCode" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="ShipCountry" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Order_Details" Relationship="NORTHWNDModel.FK_Order_Details_Orders" FromRole="Orders" ToRole="Order_Details" />
+    <NavigationProperty Name="Employee" Relationship="NORTHWNDModel.FK_Orders_Employees" FromRole="Order" ToRole="Employee" />
+  </EntityType>
+  <Association Name="FK_Order_Details_Orders">
+    <End Role="Orders" Type="NORTHWNDModel.Order" Multiplicity="1" />
+    <End Role="Order_Details" Type="NORTHWNDModel.Order_Detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="Order_Details">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Type="Int32" Name="EmployeeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Title" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TitleOfCourtesy" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="BirthDate" />
+    <Property Type="DateTime" Name="HireDate" />
+    <Property Type="String" Name="Address" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Region" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PostalCode" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Country" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HomePhone" MaxLength="24" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Extension" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="Photo" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="Notes" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ReportsTo" />
+    <Property Type="String" Name="PhotoPath" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Employees1" Relationship="NORTHWNDModel.FK_Employees_Employees" FromRole="Employee" ToRole="Employee1" />
+    <NavigationProperty Name="Employee1" Relationship="NORTHWNDModel.FK_Employees_Employees" FromRole="Employee1" ToRole="Employee" />
+    <NavigationProperty Name="Orders" Relationship="NORTHWNDModel.FK_Orders_Employees" FromRole="Employee" ToRole="Order" />
+  </EntityType>
+  <Association Name="FK_Employees_Employees">
+    <End Type="NORTHWNDModel.Employee" Role="Employee" Multiplicity="0..1" />
+    <End Type="NORTHWNDModel.Employee" Role="Employee1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Employee1">
+        <PropertyRef Name="ReportsTo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Employees">
+    <End Type="NORTHWNDModel.Employee" Role="Employee" Multiplicity="0..1" />
+    <End Type="NORTHWNDModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Type="Int32" Name="ProductID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="SupplierID" />
+    <Property Type="Int32" Name="CategoryID" />
+    <Property Type="String" Name="QuantityPerUnit" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="UnitPrice" Precision="19" Scale="4" />
+    <Property Type="Int16" Name="UnitsInStock" />
+    <Property Type="Int16" Name="UnitsOnOrder" />
+    <Property Type="Int16" Name="ReorderLevel" />
+    <Property Type="Boolean" Name="Discontinued" Nullable="false" />
+    <NavigationProperty Name="Order_Details" Relationship="NORTHWNDModel.FK_Order_Details_Products" FromRole="Product" ToRole="Order_Detail" />
+  </EntityType>
+  <Association Name="FK_Order_Details_Products">
+    <End Type="NORTHWNDModel.Product" Role="Product" Multiplicity="1" />
+    <End Type="NORTHWNDModel.Order_Detail" Role="Order_Detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="Order_Detail">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

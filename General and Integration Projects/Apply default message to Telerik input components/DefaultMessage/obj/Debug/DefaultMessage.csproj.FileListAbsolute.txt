@@ -1,0 +1,7 @@
+c:\users\germanov\documents\visual studio 2010\Projects\DefaultMessage\DefaultMessage\bin\DefaultMessage.dll
+c:\users\germanov\documents\visual studio 2010\Projects\DefaultMessage\DefaultMessage\bin\DefaultMessage.pdb
+c:\users\germanov\documents\visual studio 2010\Projects\DefaultMessage\DefaultMessage\bin\Telerik.Web.Mvc.dll
+c:\users\germanov\documents\visual studio 2010\Projects\DefaultMessage\DefaultMessage\bin\Telerik.Web.Mvc.xml
+c:\users\germanov\documents\visual studio 2010\Projects\DefaultMessage\DefaultMessage\obj\Debug\ResolveAssemblyReference.cache
+c:\users\germanov\documents\visual studio 2010\Projects\DefaultMessage\DefaultMessage\obj\Debug\DefaultMessage.dll
+c:\users\germanov\documents\visual studio 2010\Projects\DefaultMessage\DefaultMessage\obj\Debug\DefaultMessage.pdb

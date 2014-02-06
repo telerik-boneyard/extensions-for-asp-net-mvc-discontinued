@@ -1,0 +1,8 @@
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\GridMasterDetailsAjaxHierarchyEditing\GridMasterDetailsAjaxHierarchyEditing\bin\GridMasterDetailsAjaxHierarchyEditing.dll
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\GridMasterDetailsAjaxHierarchyEditing\GridMasterDetailsAjaxHierarchyEditing\bin\GridMasterDetailsAjaxHierarchyEditing.pdb
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\GridMasterDetailsAjaxHierarchyEditing\GridMasterDetailsAjaxHierarchyEditing\bin\Telerik.Web.Mvc.dll
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\GridMasterDetailsAjaxHierarchyEditing\GridMasterDetailsAjaxHierarchyEditing\bin\Telerik.Web.Mvc.pdb
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\GridMasterDetailsAjaxHierarchyEditing\GridMasterDetailsAjaxHierarchyEditing\bin\Telerik.Web.Mvc.xml
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\GridMasterDetailsAjaxHierarchyEditing\GridMasterDetailsAjaxHierarchyEditing\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\GridMasterDetailsAjaxHierarchyEditing\GridMasterDetailsAjaxHierarchyEditing\obj\Debug\GridMasterDetailsAjaxHierarchyEditing.dll
+C:\Users\subev\Documents\Visual Studio 2010\Projects\Telerik\GridMasterDetailsAjaxHierarchyEditing\GridMasterDetailsAjaxHierarchyEditing\obj\Debug\GridMasterDetailsAjaxHierarchyEditing.pdb

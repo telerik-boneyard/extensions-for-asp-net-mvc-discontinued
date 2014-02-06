@@ -1,0 +1,10 @@
+C:\IQsys\IQWorks_Telerik_CodeLib_V04\bin\IQWorksTelerikCodeLib.dll
+C:\IQsys\IQWorks_Telerik_CodeLib_V04\bin\IQWorksTelerikCodeLib.pdb
+C:\IQsys\IQWorks_Telerik_CodeLib_V04\obj\Debug\ResolveAssemblyReference.cache
+C:\IQsys\IQWorks_Telerik_CodeLib_V04\obj\Debug\IQWorksTelerikCodeLib.dll
+C:\IQsys\IQWorks_Telerik_CodeLib_V04\obj\Debug\IQWorksTelerikCodeLib.pdb
+C:\IQsys\IQWorks_Telerik_CodeLib_V05\bin\IQWorksTelerikCodeLib.dll
+C:\IQsys\IQWorks_Telerik_CodeLib_V05\bin\IQWorksTelerikCodeLib.pdb
+C:\IQsys\IQWorks_Telerik_CodeLib_V05\obj\Debug\ResolveAssemblyReference.cache
+C:\IQsys\IQWorks_Telerik_CodeLib_V05\obj\Debug\IQWorksTelerikCodeLib.dll
+C:\IQsys\IQWorks_Telerik_CodeLib_V05\obj\Debug\IQWorksTelerikCodeLib.pdb

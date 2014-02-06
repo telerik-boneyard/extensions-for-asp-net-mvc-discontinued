@@ -1,0 +1,14 @@
+C:\work\temp\tests\ImageBrowserDBBinding\ImageBrowserDBBinding\obj\Debug\ResolveAssemblyReference.cache
+C:\work\temp\tests\ImageBrowserDBBinding\ImageBrowserDBBinding\bin\ImageBrowserDBBinding.dll
+C:\work\temp\tests\ImageBrowserDBBinding\ImageBrowserDBBinding\bin\ImageBrowserDBBinding.pdb
+C:\work\temp\tests\ImageBrowserDBBinding\ImageBrowserDBBinding\bin\Telerik.Web.Mvc.dll
+C:\work\temp\tests\ImageBrowserDBBinding\ImageBrowserDBBinding\bin\Telerik.Web.Mvc.xml
+C:\work\temp\tests\ImageBrowserDBBinding\ImageBrowserDBBinding\obj\Debug\ImageBrowserDBBinding.dll
+C:\work\temp\tests\ImageBrowserDBBinding\ImageBrowserDBBinding\obj\Debug\ImageBrowserDBBinding.pdb
+C:\Users\korchev\Desktop\Support\ImageBrowserDBBinding\bin\ImageBrowserDBBinding.dll
+C:\Users\korchev\Desktop\Support\ImageBrowserDBBinding\bin\ImageBrowserDBBinding.pdb
+C:\Users\korchev\Desktop\Support\ImageBrowserDBBinding\bin\Telerik.Web.Mvc.dll
+C:\Users\korchev\Desktop\Support\ImageBrowserDBBinding\bin\Telerik.Web.Mvc.xml
+C:\Users\korchev\Desktop\Support\ImageBrowserDBBinding\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\korchev\Desktop\Support\ImageBrowserDBBinding\obj\Debug\ImageBrowserDBBinding.dll
+C:\Users\korchev\Desktop\Support\ImageBrowserDBBinding\obj\Debug\ImageBrowserDBBinding.pdb

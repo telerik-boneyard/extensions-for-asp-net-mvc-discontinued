@@ -1,0 +1,18 @@
+﻿@using NullableEnum.Models
+
+@model Nullable<Role>
+
+@{var type = typeof(Role);}
+@(Html.Telerik().DropDownListFor(m => m)
+        .BindTo(Enum.GetValues(type).Cast<Enum>().Select(m =>
+    {
+        string enumVal = Enum.GetName(type, m);
+        return new SelectListItem
+        {
+            Selected = Model != null ? (Model.Value.ToString() == enumVal) : false,
+            Text = enumVal,
+            Value = enumVal
+        };
+    }))
+    .Placeholder("Undefined")
+)

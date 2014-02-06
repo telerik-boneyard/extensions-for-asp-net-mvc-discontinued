@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@using (Html.BeginForm())
+{
+    <div id="mainP">
+        <input type="button" id="btnSubmit" value="Populate Grid" onclick="RenderPartialView()" />
+        <br />
+        <br />
+        <div id="result">
+        </div>
+    </div>
+    
+}
+
+<script type="text/javascript">
+    function RenderPartialView() {
+        //block the UI until partial view is rendered
+        $.blockUI({ message: '<h3><b><img src="/content/images/loading.gif" /> Please wait while the request is being processed...</b></h3>' });
+        //load the partial view
+        $('#result').load('@Url.Action("Grid", "Home")');
+        //unblock the UI
+        $.unblockUI();
+    }
+</script>

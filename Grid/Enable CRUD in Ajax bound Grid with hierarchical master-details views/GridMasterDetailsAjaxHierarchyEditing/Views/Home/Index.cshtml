@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>@ViewBag.Message</h2>
+
+@using GridMasterDetailsAjaxHierarchyEditing.Models
+
+@(Html.Telerik().Grid<EmployeeViewModel>()
+    .Name("Employees")
+    .Columns(columns =>
+    {
+        columns.Bound(e => e.FirstName).Width(140);
+        columns.Bound(e => e.LastName).Width(140);
+        columns.Bound(e => e.Title).Width(200);
+        columns.Bound(e => e.Country).Width(200);
+        columns.Bound(e => e.City);
+        columns.Command(cmd => cmd.Edit()).Width(100);
+        columns.Command(cmd => cmd.Delete()).Width(100);
+    })
+    .ToolBar(tb=>tb.Insert())
+    .DetailView(details => details.ClientTemplate(
+            Html.Telerik().Grid<OrderViewModel>()
+                .Name("Orders_<#= EmployeeID #>")
+                .Columns(columns =>
+                {
+                    columns.Bound(o => o.OrderID).Width(101).ReadOnly(true);
+                    columns.Bound(o => o.ShipCountry).Width(140);
+                    columns.Bound(o => o.ShipAddress).Width(200);
+                    columns.Bound(o => o.ShipName).Width(200);
+                    columns.Command(cmd => cmd.Edit()).Width(150);
+                    columns.Command(cmd => cmd.Delete()).Width(150);
+                })
+                .DataKeys(keys => keys.Add(ord => ord.OrderID).RouteKey("OrderID"))
+                .DetailView(ordersDetailView => ordersDetailView.ClientTemplate(
+                    Html.Telerik().Grid<OrderDetailsViewModel>()
+                        .Name("OrderDetails_<#= OrderID #>")
+                        .Columns(columns =>
+                        {
+                            columns.Bound(od => od.ProductName).Width(233);
+                            columns.Bound(od => od.Quantity).Width(200);
+                            columns.Bound(od => od.UnitPrice).Width(200);
+                            columns.Bound(od => od.Discount);
+                            columns.Command(cmd => cmd.Edit()).Width(100);
+                            columns.Command(cmd => cmd.Delete()).Width(100);
+                        })
+                        .DataKeys(config =>
+                        {
+                            config.Add(od => od.OrderID).RouteKey("orderID");
+                            config.Add(od => od.ProductID).RouteKey("ProductID");
+                        })                        
+                        .DataBinding(dataBinding => dataBinding.Ajax()
+                                    .Select("_OrderDetailsSelect", "OrderDetails", new { orderID = "<#= OrderID #>" })
+                                    .Update("_OrderDetailsUpdate", "OrderDetails", new { orderID = "<#= OrderID #>" })
+                                    .Delete("_OrderDetailsDelete", "OrderDetails", new { orderID = "<#= OrderID #>" })                                    
+                        )
+                        .Pageable()
+                        .Sortable()
+                        .ToHtmlString()
+                    ))
+                .DataBinding(dataBinding => dataBinding.Ajax()
+                        .Select("_OrderSelect", "Order", new { employeeID = "<#= EmployeeID #>" })
+                        .Update("_OrderUpdate", "Order", new { employeeID = "<#= EmployeeID #>" })
+                        .Delete("_OrderDelete", "Order", new { employeeID = "<#= EmployeeID #>" })
+                        .Insert("_OrderInsert", "Order", new { employeeID = "<#= EmployeeID #>" })
+                )
+                .ToolBar(tb => tb.Insert())
+                .Pageable()
+                .Sortable()
+                .Filterable()
+                .ToHtmlString()
+    ))
+    .DataKeys(keys => keys.Add(emp => emp.EmployeeID).RouteKey("EmployeeID"))
+    .DataBinding(dataBinding => 
+        dataBinding.Ajax().Select("_EmployeeSelect", "Employee")
+                 .Update("_EmployeeUpdate", "Employee")
+                 .Delete("_EmployeeDelete", "Employee")
+                 .Insert("_EmployeeInsert", "Employee")
+    )
+    .Pageable(paging => paging.PageSize(5))
+    .Sortable()
+)

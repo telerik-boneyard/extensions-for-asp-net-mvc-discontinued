@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap>
+  <siteMapNode title="Home" controller="Home" action="Index">
+    <siteMapNode title="Index" controller="Home" action="Index" />
+    <siteMapNode title="sobre">
+      <siteMapNode controller="home" action="About" title="sobre" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

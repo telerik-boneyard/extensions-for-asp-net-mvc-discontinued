@@ -1,0 +1,14 @@
+E:\PayGo\MVC\MvcApplication1\bin\MvcApplication1.dll
+E:\PayGo\MVC\MvcApplication1\bin\MvcApplication1.pdb
+E:\PayGo\MVC\MvcApplication1\bin\Telerik.Web.Mvc.dll
+E:\PayGo\MVC\MvcApplication1\bin\Telerik.Web.Mvc.xml
+E:\PayGo\MVC\MvcApplication1\obj\Debug\ResolveAssemblyReference.cache
+E:\PayGo\MVC\MvcApplication1\obj\Debug\MvcApplication1.dll
+E:\PayGo\MVC\MvcApplication1\obj\Debug\MvcApplication1.pdb
+C:\Users\Admin\Desktop\266637_MvcApplication1\MvcApplication1\bin\MvcApplication1.dll
+C:\Users\Admin\Desktop\266637_MvcApplication1\MvcApplication1\bin\MvcApplication1.pdb
+C:\Users\Admin\Desktop\266637_MvcApplication1\MvcApplication1\bin\Telerik.Web.Mvc.dll
+C:\Users\Admin\Desktop\266637_MvcApplication1\MvcApplication1\bin\Telerik.Web.Mvc.xml
+C:\Users\Admin\Desktop\266637_MvcApplication1\MvcApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\266637_MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.dll
+C:\Users\Admin\Desktop\266637_MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.pdb

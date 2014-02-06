@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Files">
+  <DataContextMoniker Name="/FilesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="68c60f6c-9ce1-4219-8c86-2cfc6dcbbdd2" absoluteBounds="0.75, 0.875, 2, 1.5785953776041664">
+      <DataClassMoniker Name="/FilesDataContext/Folder" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2bcd90a-d615-4f03-b8fd-10e044b29427" absoluteBounds="0.765, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f2fef51b-2251-429f-bc95-86ff2b3cba70" absoluteBounds="3.5, 0.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/FilesDataContext/Image" />
+      <nestedChildShapes>
+        <elementListCompartment Id="34473e73-f460-47e4-b094-73e654956ec0" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.45242346379207 : 2.45359537760417); (1.45242346379207 : 2.70359537760417); (2.06174684745593 : 2.70359537760417); (2.06174684745593 : 2.45359537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FilesDataContext/Folder/Folder_Folder" />
+      <nodes>
+        <classShapeMoniker Id="68c60f6c-9ce1-4219-8c86-2cfc6dcbbdd2" />
+        <classShapeMoniker Id="68c60f6c-9ce1-4219-8c86-2cfc6dcbbdd2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.66429768880208); (3.5 : 1.66429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FilesDataContext/Folder/Folder_Image" />
+      <nodes>
+        <classShapeMoniker Id="68c60f6c-9ce1-4219-8c86-2cfc6dcbbdd2" />
+        <classShapeMoniker Id="f2fef51b-2251-429f-bc95-86ff2b3cba70" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

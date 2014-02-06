@@ -1,0 +1,32 @@
+﻿@inherits System.Web.Mvc.WebViewPage<String>
+@using Telerik.Web.Mvc.UI
+
+@{
+ Html.Telerik().EditorFor(model => model)
+    .Tools(tools => tools.Clear()
+            .Bold()
+            .Italic()
+            .Underline()
+            .Strikethrough()
+            .Separator()
+            .FontName()
+            .FontSize()
+            .FontColor()
+            .BackColor()
+            .Separator()
+            .JustifyLeft()
+            .JustifyCenter()
+            .JustifyRight()
+            .JustifyFull()
+            .Break()
+            .Indent()
+            .Outdent()
+            .Separator()
+            .InsertUnorderedList()
+            .InsertOrderedList()
+            .Separator()
+            .CreateLink()
+            .Unlink()
+    )
+    .Render();
+}

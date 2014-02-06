@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F322F22B-8BE2-4982-9479-C00FC03EC99B}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GridBindingToDataTableSample</RootNamespace>
+    <AssemblyName>GridBindingToDataTableSample</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Web.Mvc, Version=2010.3.1110.235, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\EditorLocalization.bg-BG.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.bg-BG.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.de-DE.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.de-DE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.fr-FR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.fr-FR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.pt-BR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.pt-BR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.ru-RU.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.ru-RU.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditorLocalization.uk-UA.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorLocalization.uk-UA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.bg-BG.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.bg-BG.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.de-DE.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.de-DE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.es-ES.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.es-ES.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.fr-FR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.fr-FR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.pt-BR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.pt-BR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.pt-PT.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.pt-PT.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.ru-RU.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.ru-RU.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GridLocalization.uk-UA.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridLocalization.uk-UA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataTableViewModel.cs" />
+    <Compile Include="Models\DbGateway.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Northwind.mdf" />
+    <Content Include="App_Data\Northwind_log.ldf">
+      <DependentUpon>Northwind.mdf</DependentUpon>
+    </Content>
+    <Content Include="bin\Telerik.Web.Mvc.dll" />
+    <Content Include="bin\Telerik.Web.Mvc.xml" />
+    <Content Include="Content\2010.3.1110\Black\editor.png" />
+    <Content Include="Content\2010.3.1110\Black\loading.gif" />
+    <Content Include="Content\2010.3.1110\Black\sprite.png" />
+    <Content Include="Content\2010.3.1110\Black\treeview-line.png" />
+    <Content Include="Content\2010.3.1110\Black\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1110\Black\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1110\Default\editor.png" />
+    <Content Include="Content\2010.3.1110\Default\loading.gif" />
+    <Content Include="Content\2010.3.1110\Default\sprite.png" />
+    <Content Include="Content\2010.3.1110\Default\treeview-line.png" />
+    <Content Include="Content\2010.3.1110\Default\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1110\Default\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1110\Forest\editor.png" />
+    <Content Include="Content\2010.3.1110\Forest\loading.gif" />
+    <Content Include="Content\2010.3.1110\Forest\sprite.png" />
+    <Content Include="Content\2010.3.1110\Forest\treeview-line.png" />
+    <Content Include="Content\2010.3.1110\Forest\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1110\Forest\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1110\Hay\editor.png" />
+    <Content Include="Content\2010.3.1110\Hay\loading.gif" />
+    <Content Include="Content\2010.3.1110\Hay\sprite.png" />
+    <Content Include="Content\2010.3.1110\Hay\treeview-line.png" />
+    <Content Include="Content\2010.3.1110\Hay\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1110\Hay\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1110\Office2007\editor.png" />
+    <Content Include="Content\2010.3.1110\Office2007\loading.gif" />
+    <Content Include="Content\2010.3.1110\Office2007\sprite.png" />
+    <Content Include="Content\2010.3.1110\Office2007\treeview-line.png" />
+    <Content Include="Content\2010.3.1110\Office2007\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1110\Office2007\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1110\Outlook\editor.png" />
+    <Content Include="Content\2010.3.1110\Outlook\loading.gif" />
+    <Content Include="Content\2010.3.1110\Outlook\sprite.png" />
+    <Content Include="Content\2010.3.1110\Outlook\treeview-line.png" />
+    <Content Include="Content\2010.3.1110\Outlook\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1110\Outlook\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1110\Simple\editor.png" />
+    <Content Include="Content\2010.3.1110\Simple\loading.gif" />
+    <Content Include="Content\2010.3.1110\Simple\sprite.png" />
+    <Content Include="Content\2010.3.1110\Simple\treeview-line.png" />
+    <Content Include="Content\2010.3.1110\Simple\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1110\Simple\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1110\Sitefinity\editor.png" />
+    <Content Include="Content\2010.3.1110\Sitefinity\loading.gif" />
+    <Content Include="Content\2010.3.1110\Sitefinity\sprite.png" />
+    <Content Include="Content\2010.3.1110\Sitefinity\treeview-line.png" />
+    <Content Include="Content\2010.3.1110\Sitefinity\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1110\Sitefinity\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1110\Sunset\editor.png" />
+    <Content Include="Content\2010.3.1110\Sunset\loading.gif" />
+    <Content Include="Content\2010.3.1110\Sunset\sprite.png" />
+    <Content Include="Content\2010.3.1110\Sunset\treeview-line.png" />
+    <Content Include="Content\2010.3.1110\Sunset\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1110\Sunset\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1110\telerik.black.min.css" />
+    <Content Include="Content\2010.3.1110\telerik.common.min.css" />
+    <Content Include="Content\2010.3.1110\telerik.default.min.css" />
+    <Content Include="Content\2010.3.1110\telerik.forest.min.css" />
+    <Content Include="Content\2010.3.1110\telerik.hay.min.css" />
+    <Content Include="Content\2010.3.1110\telerik.office2007.min.css" />
+    <Content Include="Content\2010.3.1110\telerik.outlook.min.css" />
+    <Content Include="Content\2010.3.1110\telerik.rtl.min.css" />
+    <Content Include="Content\2010.3.1110\telerik.simple.min.css" />
+    <Content Include="Content\2010.3.1110\telerik.sitefinity.min.css" />
+    <Content Include="Content\2010.3.1110\telerik.sunset.min.css" />
+    <Content Include="Content\2010.3.1110\telerik.telerik.min.css" />
+    <Content Include="Content\2010.3.1110\telerik.vista.min.css" />
+    <Content Include="Content\2010.3.1110\telerik.web20.min.css" />
+    <Content Include="Content\2010.3.1110\telerik.webblue.min.css" />
+    <Content Include="Content\2010.3.1110\telerik.windows7.min.css" />
+    <Content Include="Content\2010.3.1110\Telerik\editor.png" />
+    <Content Include="Content\2010.3.1110\Telerik\loading.gif" />
+    <Content Include="Content\2010.3.1110\Telerik\sprite.png" />
+    <Content Include="Content\2010.3.1110\Telerik\treeview-line.png" />
+    <Content Include="Content\2010.3.1110\Telerik\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1110\Telerik\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1110\Vista\editor.png" />
+    <Content Include="Content\2010.3.1110\Vista\loading.gif" />
+    <Content Include="Content\2010.3.1110\Vista\sprite.png" />
+    <Content Include="Content\2010.3.1110\Web20\editor.png" />
+    <Content Include="Content\2010.3.1110\Web20\loading.gif" />
+    <Content Include="Content\2010.3.1110\Web20\sprite.png" />
+    <Content Include="Content\2010.3.1110\Web20\treeview-line.png" />
+    <Content Include="Content\2010.3.1110\Web20\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1110\Web20\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1110\WebBlue\editor.png" />
+    <Content Include="Content\2010.3.1110\WebBlue\loading.gif" />
+    <Content Include="Content\2010.3.1110\WebBlue\sprite.png" />
+    <Content Include="Content\2010.3.1110\WebBlue\treeview-line.png" />
+    <Content Include="Content\2010.3.1110\WebBlue\treeview-nodes-rtl.png" />
+    <Content Include="Content\2010.3.1110\WebBlue\treeview-nodes.png" />
+    <Content Include="Content\2010.3.1110\Windows7\editor.png" />
+    <Content Include="Content\2010.3.1110\Windows7\loading.gif" />
+    <Content Include="Content\2010.3.1110\Windows7\sprite.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\2010.3.1110\jquery-1.4.3.min.js" />
+    <Content Include="Scripts\2010.3.1110\jquery.validate.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.autocomplete.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.calendar.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.combobox.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.common.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.datepicker.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.datetimepicker.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.draganddrop.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.editor.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.grid.editing.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.grid.filtering.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.grid.grouping.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.grid.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.grid.reordering.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.grid.resizing.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.list.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.menu.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.panelbar.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.tabstrip.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.textbox.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.timepicker.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.treeview.min.js" />
+    <Content Include="Scripts\2010.3.1110\telerik.window.min.js" />
+    <Content Include="Views\Home\EditorTemplates\ProductItem.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Currency.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Date.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\DateTime.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Integer.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Number.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Time.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.bg-BG.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.bg-BG.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.de-DE.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.de-DE.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.en-US.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.fr-FR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.fr-FR.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.pt-BR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.pt-BR.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.ru-RU.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.ru-RU.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\EditorLocalization.uk-UA.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditorLocalization.uk-UA.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.bg-BG.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.bg-BG.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.de-DE.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.de-DE.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.en-US.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.es-ES.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.es-ES.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.fr-FR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.fr-FR.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.pt-BR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.pt-BR.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.pt-PT.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.pt-PT.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.ru-RU.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.ru-RU.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GridLocalization.uk-UA.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GridLocalization.uk-UA.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>34965</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

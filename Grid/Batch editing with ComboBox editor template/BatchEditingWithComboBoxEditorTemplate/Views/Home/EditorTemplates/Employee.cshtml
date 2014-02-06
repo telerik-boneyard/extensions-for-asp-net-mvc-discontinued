@@ -1,0 +1,3 @@
+﻿@(Html.Telerik().ComboBox()
+      .Name(ViewData.TemplateInfo.GetFullHtmlFieldName(string.Empty))
+      .DataBinding(binding => binding.Ajax().Select("_SelectEmployees", "Home")))

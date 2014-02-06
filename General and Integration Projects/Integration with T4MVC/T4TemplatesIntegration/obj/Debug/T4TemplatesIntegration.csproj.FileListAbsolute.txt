@@ -1,0 +1,13 @@
+C:\work\Griffin\Prototypes\T4TemplatesIntegration\T4TemplatesIntegration\bin\T4TemplatesIntegration.dll
+C:\work\Griffin\Prototypes\T4TemplatesIntegration\T4TemplatesIntegration\bin\T4TemplatesIntegration.pdb
+C:\work\Griffin\Prototypes\T4TemplatesIntegration\T4TemplatesIntegration\bin\Telerik.Web.Mvc.dll
+C:\work\Griffin\Prototypes\T4TemplatesIntegration\T4TemplatesIntegration\obj\Debug\ResolveAssemblyReference.cache
+C:\work\Griffin\Prototypes\T4TemplatesIntegration\T4TemplatesIntegration\obj\Debug\T4TemplatesIntegration.dll
+C:\work\Griffin\Prototypes\T4TemplatesIntegration\T4TemplatesIntegration\obj\Debug\T4TemplatesIntegration.pdb
+C:\Users\krustev\Desktop\TelerikT4TemplatesIntegration_616F22FE\T4TemplatesIntegration\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\krustev\Desktop\TelerikT4TemplatesIntegration_616F22FE\T4TemplatesIntegration\obj\Debug\T4TemplatesIntegration.dll
+C:\Users\krustev\Desktop\TelerikT4TemplatesIntegration_616F22FE\T4TemplatesIntegration\obj\Debug\T4TemplatesIntegration.pdb
+C:\Users\krustev\Desktop\TelerikT4TemplatesIntegration_616F22FE\T4TemplatesIntegration\bin\T4TemplatesIntegration.dll
+C:\Users\krustev\Desktop\TelerikT4TemplatesIntegration_616F22FE\T4TemplatesIntegration\bin\T4TemplatesIntegration.pdb
+C:\Users\krustev\Desktop\TelerikT4TemplatesIntegration_616F22FE\T4TemplatesIntegration\bin\Telerik.Web.Mvc.dll
+C:\Users\krustev\Desktop\TelerikT4TemplatesIntegration_616F22FE\T4TemplatesIntegration\bin\Telerik.Web.Mvc.xml

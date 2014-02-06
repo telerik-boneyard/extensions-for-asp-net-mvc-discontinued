@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<h2>@ViewBag.Message</h2>
+
+@using CodeFirstEF.Models
+
+@(Html.Telerik().Grid<Customer>()
+    .Name("Customers")
+    .ToolBar(tb => tb.Insert())
+    .DataBinding(binding => binding.Ajax()
+        .Select("GetCustomers", "Home")
+        .Update("UpdateCustomer", "Home")
+        .Insert("InsertCustomer", "Home")
+        .Delete("DeleteCustomer", "Home"))
+    .DataKeys(keys => keys.Add(o => o.CustomerID))
+    .Columns(cols =>
+    {
+        cols.Bound(c => c.CustomerID).ReadOnly();
+        cols.Bound(c => c.Name).Width(300);
+        cols.Bound(c => c.Phone);
+        cols.Bound(c => c.Email);        
+        cols.Command(cmd =>
+        {
+            cmd.Edit();
+            cmd.Delete();
+        });
+    })
+    .DetailView(template => template.ClientTemplate(
+                        Html.Telerik().Grid<Order>().Name("Orders_<#=CustomerID#>")
+                        
+                        .DataBinding(db => db.Ajax()
+                            .Select("GetOrders", "Home", new { CustomerID = "<#=CustomerID#>" })
+                            .Insert("InsertOrder", "Home", new { CustomerID = "<#=CustomerID#>" })
+                            .Update("UpdateOrder", "Home", new { CustomerID = "<#=CustomerID#>" })
+                            .Delete("DeleteOrder", "Home", new { CustomerID = "<#=CustomerID#>" })
+                        )
+                        .Columns(cols =>
+                        {
+                            cols.Bound(o => o.OrderID).ReadOnly().Width(300);
+                            cols.Bound(o => o.Price).Width(300);
+                            cols.Bound(o => o.Quantity).Width(300);
+                            cols.Command(cmd =>
+                            {
+                                cmd.Edit();
+                                cmd.Delete();
+                            });
+                        })
+                        .DataKeys(keys => keys.Add(o => o.OrderID).RouteKey("OrderID"))
+                        .ToolBar(tb => tb.Insert())
+                        .ToHtmlString()
+                )
+        )
+    )

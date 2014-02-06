@@ -1,0 +1,7 @@
+C:\Projects\TelerikEditorTemplates\TelerikEditorTemplates.Infrastructure\bin\Debug\TelerikEditorTemplates.Infrastructure.dll
+C:\Projects\TelerikEditorTemplates\TelerikEditorTemplates.Infrastructure\bin\Debug\TelerikEditorTemplates.Infrastructure.pdb
+C:\Projects\TelerikEditorTemplates\TelerikEditorTemplates.Infrastructure\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\TelerikEditorTemplates\TelerikEditorTemplates.Infrastructure\obj\Debug\TelerikEditorTemplates.Infrastructure.dll
+C:\Projects\TelerikEditorTemplates\TelerikEditorTemplates.Infrastructure\obj\Debug\TelerikEditorTemplates.Infrastructure.pdb
+C:\Projects\TelerikEditorTemplates\TelerikEditorTemplates.Infrastructure\bin\Debug\TelerikEditorTemplates.Core.dll
+C:\Projects\TelerikEditorTemplates\TelerikEditorTemplates.Infrastructure\bin\Debug\TelerikEditorTemplates.Core.pdb

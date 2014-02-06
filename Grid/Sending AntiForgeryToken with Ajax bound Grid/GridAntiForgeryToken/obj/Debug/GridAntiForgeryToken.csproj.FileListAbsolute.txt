@@ -1,0 +1,15 @@
+c:\users\korchev\documents\visual studio 2010\Projects\GridAntiForgeryToken\GridAntiForgeryToken\bin\GridAntiForgeryToken.dll
+c:\users\korchev\documents\visual studio 2010\Projects\GridAntiForgeryToken\GridAntiForgeryToken\bin\GridAntiForgeryToken.pdb
+c:\users\korchev\documents\visual studio 2010\Projects\GridAntiForgeryToken\GridAntiForgeryToken\bin\Telerik.Web.Mvc.dll
+c:\users\korchev\documents\visual studio 2010\Projects\GridAntiForgeryToken\GridAntiForgeryToken\bin\Telerik.Web.Mvc.xml
+c:\users\korchev\documents\visual studio 2010\Projects\GridAntiForgeryToken\GridAntiForgeryToken\obj\Debug\ResolveAssemblyReference.cache
+c:\users\korchev\documents\visual studio 2010\Projects\GridAntiForgeryToken\GridAntiForgeryToken\obj\Debug\GridAntiForgeryToken.dll
+c:\users\korchev\documents\visual studio 2010\Projects\GridAntiForgeryToken\GridAntiForgeryToken\obj\Debug\GridAntiForgeryToken.pdb
+C:\Users\karadachki\Desktop\Support\GridAntiForgeryToken\bin\GridAntiForgeryToken.dll
+C:\Users\karadachki\Desktop\Support\GridAntiForgeryToken\bin\GridAntiForgeryToken.pdb
+C:\Users\karadachki\Desktop\Support\GridAntiForgeryToken\bin\Telerik.Web.Mvc.dll
+C:\Users\karadachki\Desktop\Support\GridAntiForgeryToken\bin\Telerik.Web.Mvc.xml
+C:\Users\karadachki\Desktop\Support\GridAntiForgeryToken\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\karadachki\Desktop\Support\GridAntiForgeryToken\obj\Debug\GridAntiForgeryToken.dll
+C:\Users\karadachki\Desktop\Support\GridAntiForgeryToken\obj\Debug\GridAntiForgeryToken.pdb
+C:\Users\karadachki\Desktop\Support\GridAntiForgeryToken\bin\Telerik.Web.Mvc.pdb

@@ -1,0 +1,27 @@
+﻿@inherits System.Web.Mvc.WebViewPage<System.Data.DataTable>
+
+
+ @if (Model != null)
+ {
+        
+@(Html.Telerik().Grid<System.Data.DataRow>(Model.Rows.Cast<System.Data.DataRow>())
+                .Name("grd")
+        .Columns(columns =>
+        {
+            foreach (System.Data.DataColumn column in Model.Columns)
+            {
+                columns.Bound(column.DataType, column.ColumnName).Width(50);
+            }
+        })
+
+        .DataBinding(dataBinding => dataBinding.Ajax().Select("_CustomBinding", "Home"))
+        .Pageable(settings => settings.Total((int)ViewData["total"]))
+        .EnableCustomBinding(true)
+        .Sortable(settings => settings.Enabled(false))
+        .Filterable(settings => settings.Enabled(false))
+        .Groupable(settings => settings.Enabled(false))
+        )
+     
+ }
+
+ 

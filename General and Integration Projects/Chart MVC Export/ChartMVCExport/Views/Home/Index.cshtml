@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ChartMVCExport.Models.SalesData>
+
+<div>
+    <button class="export" data-format="png">
+        Export to PNG
+    </button>
+    <button class="export" data-format="pdf">
+        Export to PDF
+    </button>
+</div>
+
+<div style="display: none;">
+    @Html.BeginForm("_Export", "Home", FormMethod.Post, new { id = "exportForm" }) {
+        <input type="hidden" id="exportString" name="svg" />
+        <input type="hidden" id="exportFormat" name="format" />
+    }
+</div>
+
+@(Html.Telerik().Chart(Model)
+            .Name("chart")
+            .Title("Representative Sales vs. Total Sales")
+            .Legend(legend => legend
+                .Position(ChartLegendPosition.Bottom)
+            )
+            .Series(series =>
+            {
+                series.Column(s => s.RepSales).Name("Representative Sales");
+                series.Column(s => s.TotalSales).Name("Total Sales");
+            })
+            .CategoryAxis(axis => axis
+                .Categories(s => s.DateString)
+            )
+            .ValueAxis(axis => axis
+                .Numeric().Labels(labels => labels.Format("${0:#,##0}"))
+                .MajorGridLines(majorGridLines => majorGridLines.Visible(false))
+                .PlotBands(plotBands =>
+                {
+                    plotBands.Add().Color("#cccccc").From(0).To(12000).Opacity(0.3);
+                })
+            )
+            .HtmlAttributes(new { style = "width: 600px; height: 400px; margin: auto;" })
+      
+)
+ <script type="text/javascript">
+     $(".export").click(function () {
+         var chart = $("#chart").data("tChart");
+         var svgString = escape(chart.svg());
+         var exportFormat = $(this).data("format");
+
+         $("#exportString").val(svgString);
+         $("#exportFormat").val(exportFormat);
+         $("#exportForm").submit();
+     });
+</script>

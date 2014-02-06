@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Upload files";
+}
+
+<h2>Upload files</h2>
+
+@(Html.Telerik().Grid<UserFile>()
+    .Name("filesGrid")
+    .ToolBar(toolbar => toolbar.Template(
+        @<text>
+            @(Html.Telerik().Upload()
+                .Name("files")
+                .Async(async => async
+                    .Save("Save", "Home")
+                )
+                .ClientEvents(events => events
+                    .OnSuccess("onUploadSuccess")
+                )
+                // Hide the file list as we're displaying uploaded files in the Grid
+                .ShowFileList(false)
+            )
+            <span>(File size limit - 4MB)</span>
+        </text>
+    ))
+    .DataKeys(keys => keys.Add(f => f.ID))
+    .Columns(columns => {
+        columns
+            .Bound(f => f.Name)
+            .ClientTemplate("<a href='Home/Download?id=<#= ID #>'><#= Name #></a>")
+            .Title("File name");
+        columns
+            .Bound(f => f.Data.Length)
+            // Calculate the file size in KB and round it up
+            .ClientTemplate("<#= Math.ceil(parseInt(Data.Length) / 1024) #>")
+            .Title("File size in KB")
+            .Width(150);
+        columns
+            .Command(command => command.Delete())
+            .Width(100);
+    })
+    .DataBinding(dataBinding => dataBinding
+        // Setup AJAX binding
+        .Ajax()
+            .Select("_GetFiles", "Home")
+            .Delete("_DeleteFile", "Home")
+    )
+    .Sortable()
+)
+
+<script type="text/javascript">
+    function onUploadSuccess() {
+        // Rebind the Grid on successful upload
+        $("#filesGrid").data("tGrid").rebind();
+    }
+</script>

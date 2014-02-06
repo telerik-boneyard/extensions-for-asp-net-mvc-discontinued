@@ -1,0 +1,7 @@
+c:\users\korchev\documents\visual studio 2010\Projects\DropDownInGrid\DropDownInGrid\bin\DropDownInGrid.dll
+c:\users\korchev\documents\visual studio 2010\Projects\DropDownInGrid\DropDownInGrid\bin\DropDownInGrid.pdb
+c:\users\korchev\documents\visual studio 2010\Projects\DropDownInGrid\DropDownInGrid\bin\Telerik.Web.Mvc.dll
+c:\users\korchev\documents\visual studio 2010\Projects\DropDownInGrid\DropDownInGrid\bin\Telerik.Web.Mvc.xml
+c:\users\korchev\documents\visual studio 2010\Projects\DropDownInGrid\DropDownInGrid\obj\Debug\ResolveAssemblyReference.cache
+c:\users\korchev\documents\visual studio 2010\Projects\DropDownInGrid\DropDownInGrid\obj\Debug\DropDownInGrid.dll
+c:\users\korchev\documents\visual studio 2010\Projects\DropDownInGrid\DropDownInGrid\obj\Debug\DropDownInGrid.pdb

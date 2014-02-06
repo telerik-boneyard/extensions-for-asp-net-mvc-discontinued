@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikEditorTemplates", "TelerikEditorTemplates\TelerikEditorTemplates.csproj", "{CA920369-9956-4A9C-9AD8-ACDE723D0EA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikEditorTemplates.Core", "TelerikEditorTemplates.Core\TelerikEditorTemplates.Core.csproj", "{35AA28C0-BC18-44DA-B737-98A61E79F055}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikEditorTemplates.Infrastructure", "TelerikEditorTemplates.Infrastructure\TelerikEditorTemplates.Infrastructure.csproj", "{31EF8E71-8321-4984-A5BB-EBCA34585C89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA920369-9956-4A9C-9AD8-ACDE723D0EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA920369-9956-4A9C-9AD8-ACDE723D0EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA920369-9956-4A9C-9AD8-ACDE723D0EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA920369-9956-4A9C-9AD8-ACDE723D0EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35AA28C0-BC18-44DA-B737-98A61E79F055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35AA28C0-BC18-44DA-B737-98A61E79F055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35AA28C0-BC18-44DA-B737-98A61E79F055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35AA28C0-BC18-44DA-B737-98A61E79F055}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31EF8E71-8321-4984-A5BB-EBCA34585C89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31EF8E71-8321-4984-A5BB-EBCA34585C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31EF8E71-8321-4984-A5BB-EBCA34585C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31EF8E71-8321-4984-A5BB-EBCA34585C89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

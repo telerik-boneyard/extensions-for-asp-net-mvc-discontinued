@@ -1,0 +1,19 @@
+﻿@{
+	ViewBag.Title = "Home Page";
+}
+@{ Html.Telerik().Splitter()
+		.Name("Splitter")
+		.Orientation(SplitterOrientation.Horizontal)
+		.Panes(hpanes =>
+		{
+			//add the first pane and set its properties
+			hpanes.Add()
+			.Size("300px")
+			.MinSize("300px")
+			.Collapsible(false)
+			.LoadContentFrom("ContentPanelBar", "Content");
+			//add the second pane
+			hpanes.Add();
+		})
+		.Render();
+}

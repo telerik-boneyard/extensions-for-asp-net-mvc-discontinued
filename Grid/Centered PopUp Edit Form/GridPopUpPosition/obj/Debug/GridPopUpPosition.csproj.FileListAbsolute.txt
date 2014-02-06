@@ -1,0 +1,7 @@
+C:\work\temp\tests\GridPopUpPosition\GridPopUpPosition\bin\GridPopUpPosition.dll
+C:\work\temp\tests\GridPopUpPosition\GridPopUpPosition\bin\GridPopUpPosition.pdb
+C:\work\temp\tests\GridPopUpPosition\GridPopUpPosition\bin\Telerik.Web.Mvc.dll
+C:\work\temp\tests\GridPopUpPosition\GridPopUpPosition\bin\Telerik.Web.Mvc.xml
+C:\work\temp\tests\GridPopUpPosition\GridPopUpPosition\obj\Debug\ResolveAssemblyReference.cache
+C:\work\temp\tests\GridPopUpPosition\GridPopUpPosition\obj\Debug\GridPopUpPosition.dll
+C:\work\temp\tests\GridPopUpPosition\GridPopUpPosition\obj\Debug\GridPopUpPosition.pdb

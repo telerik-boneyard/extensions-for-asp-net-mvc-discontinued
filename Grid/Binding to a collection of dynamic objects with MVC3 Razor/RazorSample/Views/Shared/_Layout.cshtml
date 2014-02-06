@@ -1,0 +1,32 @@
+﻿@using Telerik.Web.Mvc.UI
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />    
+    @Html.Telerik().StyleSheetRegistrar().DefaultGroup(g => g.Add("telerik.common.css").Add("telerik.windows7.css"))
+</head>
+
+<body>
+    <div class="page">
+
+        <div id="header">
+            <div id="title">
+                <h1>Grid Bound to Dynamic Object</h1>
+            </div>           
+
+            <div id="menucontainer">                
+                <ul id="menu">                
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>                    
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+            @RenderBody()
+            <div id="footer">
+            </div>
+        </div>
+        @Html.Telerik().ScriptRegistrar()
+    </div>
+</body>
+</html>

@@ -1,0 +1,414 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TelerikMVCGridSearchDemo
+</name>
+</assembly>
+<members>
+<member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.Bold">
+	<summary>
+  Looks up a localized string similar to Bold.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.CreateLink">
+	<summary>
+  Looks up a localized string similar to Insert hyperlink.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.DeleteFile">
+	<summary>
+  Looks up a localized string similar to Are you sure you want to delete "{0}"?.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.DirectoryNotFound">
+	<summary>
+  Looks up a localized string similar to A directory with this name was not found..
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.EmptyFolder">
+	<summary>
+  Looks up a localized string similar to Empty Folder.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.FontName">
+	<summary>
+  Looks up a localized string similar to Select font family.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.FontNameInherit">
+	<summary>
+  Looks up a localized string similar to (inherited font).
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.FontSize">
+	<summary>
+  Looks up a localized string similar to Select font size.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.FontSizeInherit">
+	<summary>
+  Looks up a localized string similar to (inherited size).
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.FormatBlock">
+	<summary>
+  Looks up a localized string similar to Select block type.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.Indent">
+	<summary>
+  Looks up a localized string similar to Indent.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.InsertHtml">
+	<summary>
+  Looks up a localized string similar to Insert HTML.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.InsertImage">
+	<summary>
+  Looks up a localized string similar to Insert image.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.InsertOrderedList">
+	<summary>
+  Looks up a localized string similar to Insert ordered list.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.InsertUnorderedList">
+	<summary>
+  Looks up a localized string similar to Insert unordered list.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.InvalidFileType">
+	<summary>
+  Looks up a localized string similar to The selected file \"{0}\" is not valid. Supported file types are {1}..
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.Italic">
+	<summary>
+  Looks up a localized string similar to Italic.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.JustifyCenter">
+	<summary>
+  Looks up a localized string similar to Center text.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.JustifyFull">
+	<summary>
+  Looks up a localized string similar to Justify.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.JustifyLeft">
+	<summary>
+  Looks up a localized string similar to Align text left.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.JustifyRight">
+	<summary>
+  Looks up a localized string similar to Align text right.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.OrderBy">
+	<summary>
+  Looks up a localized string similar to Arrange by:.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.OrderByName">
+	<summary>
+  Looks up a localized string similar to Name.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.OrderBySize">
+	<summary>
+  Looks up a localized string similar to Size.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.Outdent">
+	<summary>
+  Looks up a localized string similar to Outdent.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.OverwriteFile">
+	<summary>
+  Looks up a localized string similar to 'A file with name "{0}" already exists in the current directory. Do you want to overwrite it?.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.Strikethrough">
+	<summary>
+  Looks up a localized string similar to Strikethrough.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.Style">
+	<summary>
+  Looks up a localized string similar to Styles.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.Underline">
+	<summary>
+  Looks up a localized string similar to Underline.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.Unlink">
+	<summary>
+  Looks up a localized string similar to Remove hyperlink.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.EditorLocalization.UploadFile">
+	<summary>
+  Looks up a localized string similar to Upload.
+</summary>
+</member><member name="T:TelerikMVCGridSearchDemo.Resources.EditorLocalization">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.AddNew">
+	<summary>
+  Looks up a localized string similar to Add new record.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.Cancel">
+	<summary>
+  Looks up a localized string similar to Cancel.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.CancelChanges">
+	<summary>
+  Looks up a localized string similar to Cancel changes.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.Delete">
+	<summary>
+  Looks up a localized string similar to Delete.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.DeleteConfirmation">
+	<summary>
+  Looks up a localized string similar to Are you sure you want to delete this record?.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.DisplayingItems">
+	<summary>
+  Looks up a localized string similar to Displaying items {0} - {1} of {2}.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.Edit">
+	<summary>
+  Looks up a localized string similar to Edit.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.Filter">
+	<summary>
+  Looks up a localized string similar to Filter.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterAnd">
+	<summary>
+  Looks up a localized string similar to And.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterBoolIsFalse">
+	<summary>
+  Looks up a localized string similar to is false.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterBoolIsTrue">
+	<summary>
+  Looks up a localized string similar to is true.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterClear">
+	<summary>
+  Looks up a localized string similar to Clear Filter.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterDateEq">
+	<summary>
+  Looks up a localized string similar to Is equal to.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterDateGe">
+	<summary>
+  Looks up a localized string similar to Is after or equal to.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterDateGt">
+	<summary>
+  Looks up a localized string similar to Is after.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterDateLe">
+	<summary>
+  Looks up a localized string similar to Is before or equal to.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterDateLt">
+	<summary>
+  Looks up a localized string similar to Is before.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterDateNe">
+	<summary>
+  Looks up a localized string similar to Is not equal to.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterEnumEq">
+	<summary>
+  Looks up a localized string similar to Is equal to.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterEnumNe">
+	<summary>
+  Looks up a localized string similar to Is not equal to.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterForeignKeyEq">
+	<summary>
+  Looks up a localized string similar to Is equal to.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterForeignKeyNe">
+	<summary>
+  Looks up a localized string similar to Is not equal to.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterNumberEq">
+	<summary>
+  Looks up a localized string similar to Is equal to.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterNumberGe">
+	<summary>
+  Looks up a localized string similar to Is greater than or equal to.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterNumberGt">
+	<summary>
+  Looks up a localized string similar to Is greater than.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterNumberLe">
+	<summary>
+  Looks up a localized string similar to Is less than or equal to.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterNumberLt">
+	<summary>
+  Looks up a localized string similar to Is less than.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterNumberNe">
+	<summary>
+  Looks up a localized string similar to Is not equal to.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterSelectValue">
+	<summary>
+  Looks up a localized string similar to -Select value-.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterShowRows">
+	<summary>
+  Looks up a localized string similar to Show rows with value that.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterStringEndsWith">
+	<summary>
+  Looks up a localized string similar to Ends with.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterStringEq">
+	<summary>
+  Looks up a localized string similar to Is equal to.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterStringNe">
+	<summary>
+  Looks up a localized string similar to Is not equal to.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterStringStartsWith">
+	<summary>
+  Looks up a localized string similar to Starts with.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.FilterStringSubstringOf">
+	<summary>
+  Looks up a localized string similar to Contains.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.GroupHint">
+	<summary>
+  Looks up a localized string similar to Drag a column header and drop it here to group by that column.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.Insert">
+	<summary>
+  Looks up a localized string similar to Insert.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.NoRecords">
+	<summary>
+  Looks up a localized string similar to No records to display..
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.Page">
+	<summary>
+  Looks up a localized string similar to Page .
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.PageOf">
+	<summary>
+  Looks up a localized string similar to of {0}.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.Refresh">
+	<summary>
+  Looks up a localized string similar to Refresh.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.SaveChanges">
+	<summary>
+  Looks up a localized string similar to Save changes.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.SortedAsc">
+	<summary>
+  Looks up a localized string similar to sorted ascending.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.SortedDesc">
+	<summary>
+  Looks up a localized string similar to sorted descending.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.UnGroup">
+	<summary>
+  Looks up a localized string similar to ungroup.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization.Update">
+	<summary>
+  Looks up a localized string similar to Update.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.Resources.GridLocalization._Select">
+	<summary>
+  Looks up a localized string similar to Select.
+</summary>
+</member><member name="T:TelerikMVCGridSearchDemo.Resources.GridLocalization">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:TelerikMVCGridSearchDemo.ComputerContext.GenerateComputers(System.Int32)">
+	<summary>
+ Generates the specified amount of Computers and adds them to the shared list of Computers
+ </summary>
+	<param name="Amount"></param>
+	<remarks></remarks>
+</member><member name="M:TelerikMVCGridSearchDemo.ComputerContext.GetRandomMac(System.Byte)">
+	<summary>
+ Generates a Random MAC address
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TelerikMVCGridSearchDemo.Controllers.HomeController.Index">
+	<summary>
+ Returns the Default view
+ No other views implemented
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TelerikMVCGridSearchDemo.Controllers.HomeController._Select(System.String)">
+	<summary>
+ Returns a list of computers
+ Called by Telerik Grid on sorting, paging, refresh, etc.
+ </summary>
+	<param name="searchstring">search string (optional)</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TelerikMVCGridSearchDemo.Controllers.HomeController._Insert(System.String)">
+	<summary>
+ Inserts a new Computer record
+ Used by Telerik Grid
+ </summary>
+	<param name="searchstring">Search string (optional)</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TelerikMVCGridSearchDemo.Controllers.HomeController._Update(System.Int32,System.String)">
+	<summary>
+ Updates a computer record
+ Used by Telerik Grid
+ </summary>
+	<param name="ID">Computer ID</param>
+	<param name="searchstring">Search string (optional)</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TelerikMVCGridSearchDemo.Controllers.HomeController._Delete(System.Int32,System.String)">
+	<summary>
+ Deletes a computer record
+ </summary>
+	<param name="ID">Computer ID</param>
+	<param name="searchstring">search string (optional)</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:TelerikMVCGridSearchDemo.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:TelerikMVCGridSearchDemo.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:TelerikMVCGridSearchDemo.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

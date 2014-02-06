@@ -1,0 +1,30 @@
+﻿@using Telerik.Web.Mvc.UI
+@model IEnumerable<dynamic>
+
+@(
+    Html.Telerik().Grid(Model).Name("Grid")
+                .DataKeys(dataKeys => dataKeys.Add("ProductID"))
+                .ToolBar(toolBar => toolBar.Insert())
+                .Columns(columns => 
+                { 
+                    columns.Bound("ProductID");
+                    columns.Bound("ProductName");
+                    columns.Bound("UnitPrice").Format("{0:c}");
+                    columns.Bound("QuantityPerUnit");
+                    columns.Command(command =>
+                    {
+                        command.Edit();
+                        command.Delete();
+                    });
+                })
+                .Editable(editable => editable.TemplateName("ProductItem").Mode(GridEditMode.InForm))
+                .DataBinding(dataBinding => dataBinding.Ajax()
+                                                        .Select("Select", "Home")
+                                                        .Update("Update","Home")
+                                                        .Insert("Insert", "Home")
+                                                        .Delete("Delete","Home"))
+                .Pageable()
+                .Sortable()
+                .Groupable()
+                .Filterable()
+)

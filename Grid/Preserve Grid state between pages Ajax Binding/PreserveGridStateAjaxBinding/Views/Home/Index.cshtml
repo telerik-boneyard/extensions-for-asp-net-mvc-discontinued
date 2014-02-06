@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@(
+ Html.Telerik().Grid<Product>()
+        .Name("Grid")
+        .DataBinding(binding => binding.Ajax().Select("_Select", "Home"))
+        .Columns(columns =>
+        {
+            columns.Bound(p => p.ProductID);
+            columns.Bound(p => p.ProductName);
+            columns.Template(@<text></text>)
+                .ClientTemplate(Html.ActionLink("Details", "ProductDetails", new { id = "<#= ProductID #>" }).ToHtmlString());
+        })
+        .Filterable()
+        .Sortable()
+        .Groupable()
+        .Pageable()
+)

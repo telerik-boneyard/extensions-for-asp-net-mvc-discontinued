@@ -1,0 +1,11 @@
+E:\Temp\TelerikDemo\TelerikGridSearchDemo\bin\TelerikMVCGridSearchDemo.dll
+E:\Temp\TelerikDemo\TelerikGridSearchDemo\bin\TelerikMVCGridSearchDemo.pdb
+E:\Temp\TelerikDemo\TelerikGridSearchDemo\bin\TelerikMVCGridSearchDemo.xml
+E:\Temp\TelerikDemo\TelerikGridSearchDemo\bin\Telerik.Web.Mvc.dll
+E:\Temp\TelerikDemo\TelerikGridSearchDemo\obj\Debug\ResolveAssemblyReference.cache
+E:\Temp\TelerikDemo\TelerikGridSearchDemo\obj\Debug\TelerikMVCGridSearchDemo.Resources.resources
+E:\Temp\TelerikDemo\TelerikGridSearchDemo\obj\Debug\GenerateResource.read.1.tlog
+E:\Temp\TelerikDemo\TelerikGridSearchDemo\obj\Debug\GenerateResource.write.1.tlog
+E:\Temp\TelerikDemo\TelerikGridSearchDemo\obj\Debug\TelerikMVCGridSearchDemo.dll
+E:\Temp\TelerikDemo\TelerikGridSearchDemo\obj\Debug\TelerikMVCGridSearchDemo.xml
+E:\Temp\TelerikDemo\TelerikGridSearchDemo\obj\Debug\TelerikMVCGridSearchDemo.pdb

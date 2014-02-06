@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<form method="post" action="/Home/_SaveBatchEditing">
+    <input type="text" id="test" name="updated[0].Employee.EmployeeID" />
+    <button type="submit">Click</button>
+</form>
+
+@(Html.Telerik().Grid<BatchEditingWithComboBoxEditorTemplate.Models.EditableOrder>()
+        .Name("Grid")
+        .DataKeys(keys =>
+        {
+            keys.Add(o => o.OrderID);
+        })
+        .ToolBar(commands =>
+        {
+            commands.Insert();
+            commands.SubmitChanges();
+        })
+        .DataBinding(dataBinding =>
+        {
+            dataBinding.Ajax()
+                .Select("_SelectBatchEditing", "Home")
+                .Update("_SaveBatchEditing", "Home");
+        })
+        .Columns(columns =>
+        {
+            columns.Bound(o => o.OrderID).Width(100);
+            columns.Bound(o => o.Employee).ClientTemplate("<#= Employee.FirstName + \" \" + Employee.LastName #>").Width(230);
+            columns.Bound(o => o.OrderDate).Width(150);
+            columns.Bound(o => o.Freight).Width(220);
+            columns.Command(commands => commands.Edit()).Title("Edit").Width(200);
+        })
+        .ClientEvents(events => events.OnDataBinding("Grid_onDataBinding").OnEdit("Grid_OnEdit").OnSave("Grid_OnSave"))
+        .Editable(editing => editing.Mode(GridEditMode.InCell))
+        .Pageable()
+)
+
+<script type="text/javascript">
+        function Grid_onDataBinding(e) {
+            var grid = $(this).data('tGrid');
+            if (grid.hasChanges()) {
+                if (!confirm('You are going to lose any unsaved changes. Are you sure?')) {
+                    e.preventDefault();
+                }
+            }
+        }
+
+        function Grid_OnEdit(e) {
+            var $combo = $(e.cell).find('#Employee');
+            if ($combo.length > 0) {
+                var combo = $combo.data('tComboBox');
+                combo.fill(function () {
+                    combo.value(e.dataItem['Employee'].EmployeeID)
+                });
+            }
+        }
+
+        function Grid_OnSave(e) {
+            var $combo = $(e.cell).find('#Employee');
+            if ($combo.length > 0) {
+                var combo = $combo.data("tComboBox"),
+                    selectItem = combo.selectedIndex > -1 ? combo.data[combo.selectedIndex] : null;
+
+                if (selectItem) {
+                    var splitName = selectItem.Text.split(" ");
+                    e.values["Employee"] = { EmployeeID: selectItem.Value || selectItem.Text, FirstName: splitName[0], LastName: splitName[1] };
+                } else {
+                    var value = combo.value();
+                    e.values["Employee"] = { EmployeeID: value, FirstName: value, LastName: value };
+                }
+            }
+        }
+</script>

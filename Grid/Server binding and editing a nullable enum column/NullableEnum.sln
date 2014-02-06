@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableEnum", "NullableEnum\NullableEnum.csproj", "{299107EE-BF05-4681-B86C-2C9D631E9456}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug MVC2|Any CPU = Debug MVC2|Any CPU
+		Debug MVC3|Any CPU = Debug MVC3|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release MVC2|Any CPU = Release MVC2|Any CPU
+		Release MVC3|Any CPU = Release MVC3|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{299107EE-BF05-4681-B86C-2C9D631E9456}.Debug MVC2|Any CPU.ActiveCfg = Debug|Any CPU
+		{299107EE-BF05-4681-B86C-2C9D631E9456}.Debug MVC2|Any CPU.Build.0 = Debug|Any CPU
+		{299107EE-BF05-4681-B86C-2C9D631E9456}.Debug MVC3|Any CPU.ActiveCfg = Debug|Any CPU
+		{299107EE-BF05-4681-B86C-2C9D631E9456}.Debug MVC3|Any CPU.Build.0 = Debug|Any CPU
+		{299107EE-BF05-4681-B86C-2C9D631E9456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{299107EE-BF05-4681-B86C-2C9D631E9456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{299107EE-BF05-4681-B86C-2C9D631E9456}.Release MVC2|Any CPU.ActiveCfg = Release|Any CPU
+		{299107EE-BF05-4681-B86C-2C9D631E9456}.Release MVC2|Any CPU.Build.0 = Release|Any CPU
+		{299107EE-BF05-4681-B86C-2C9D631E9456}.Release MVC3|Any CPU.ActiveCfg = Release|Any CPU
+		{299107EE-BF05-4681-B86C-2C9D631E9456}.Release MVC3|Any CPU.Build.0 = Release|Any CPU
+		{299107EE-BF05-4681-B86C-2C9D631E9456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{299107EE-BF05-4681-B86C-2C9D631E9456}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

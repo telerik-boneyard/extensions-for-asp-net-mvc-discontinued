@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ImageBrowser" Class="FilesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS2008;AttachDbFilename=|DataDirectory|\ImageBrowser.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ImageBrowserConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Folders" Member="Folders">
+    <Type Name="Folder">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Path" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="Folder_Folder" Member="ChildFolders" ThisKey="Id" OtherKey="ParentId" Type="Folder" />
+      <Association Name="Folder_Image" Member="Images" ThisKey="Id" OtherKey="FolderId" Type="Image" />
+      <Association Name="Folder_Folder" Member="Parent" ThisKey="ParentId" OtherKey="Id" Type="Folder" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Images" Member="Images">
+    <Type Name="Image">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Image" Member="Data" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="FolderId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Folder_Image" Member="Folder" ThisKey="FolderId" OtherKey="Id" Type="Folder" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+</Database>

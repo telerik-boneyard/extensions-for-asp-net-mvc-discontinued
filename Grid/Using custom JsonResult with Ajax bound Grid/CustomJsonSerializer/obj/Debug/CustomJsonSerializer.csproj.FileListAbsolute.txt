@@ -1,0 +1,7 @@
+C:\work\temp\tests\CustomJsonSerializer\CustomJsonSerializer\bin\CustomJsonSerializer.dll
+C:\work\temp\tests\CustomJsonSerializer\CustomJsonSerializer\bin\CustomJsonSerializer.pdb
+C:\work\temp\tests\CustomJsonSerializer\CustomJsonSerializer\bin\Telerik.Web.Mvc.dll
+C:\work\temp\tests\CustomJsonSerializer\CustomJsonSerializer\bin\Telerik.Web.Mvc.xml
+C:\work\temp\tests\CustomJsonSerializer\CustomJsonSerializer\obj\Debug\ResolveAssemblyReference.cache
+C:\work\temp\tests\CustomJsonSerializer\CustomJsonSerializer\obj\Debug\CustomJsonSerializer.dll
+C:\work\temp\tests\CustomJsonSerializer\CustomJsonSerializer\obj\Debug\CustomJsonSerializer.pdb

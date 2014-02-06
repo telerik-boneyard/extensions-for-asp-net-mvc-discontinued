@@ -1,0 +1,7 @@
+c:\users\krustev\documents\visual studio 2010\Projects\MenuBindToSiteMap\MenuBindToSiteMap\bin\MenuBindToSiteMap.dll
+c:\users\krustev\documents\visual studio 2010\Projects\MenuBindToSiteMap\MenuBindToSiteMap\bin\MenuBindToSiteMap.pdb
+c:\users\krustev\documents\visual studio 2010\Projects\MenuBindToSiteMap\MenuBindToSiteMap\bin\Telerik.Web.Mvc.dll
+c:\users\krustev\documents\visual studio 2010\Projects\MenuBindToSiteMap\MenuBindToSiteMap\bin\Telerik.Web.Mvc.xml
+c:\users\krustev\documents\visual studio 2010\Projects\MenuBindToSiteMap\MenuBindToSiteMap\obj\Debug\ResolveAssemblyReference.cache
+c:\users\krustev\documents\visual studio 2010\Projects\MenuBindToSiteMap\MenuBindToSiteMap\obj\Debug\MenuBindToSiteMap.dll
+c:\users\krustev\documents\visual studio 2010\Projects\MenuBindToSiteMap\MenuBindToSiteMap\obj\Debug\MenuBindToSiteMap.pdb

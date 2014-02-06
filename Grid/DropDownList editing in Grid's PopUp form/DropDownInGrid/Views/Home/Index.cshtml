@@ -1,0 +1,18 @@
+﻿@using DropDownInGrid.Models;
+@(Html.Telerik().Grid<ProductViewModel>()
+        .Name("Grid")
+        .DataKeys(k => k.Add(o => o.ProductID))
+        .Columns(columns =>
+        {
+            columns.Command(commands => commands.Edit().ButtonType(GridButtonType.Image)).Width(60);
+            columns.Bound(o => o.ProductName).Title("Product");
+            columns.Bound(o => o.CategoryName).Title("Category").Width(180);
+        })
+        .DataBinding(dataBinding => dataBinding.Ajax()
+                                               .Select("GetProducts", "Home")
+                                               .Update("Update", "Home")
+        )
+        .Editable(editing => editing.Mode(GridEditMode.PopUp))
+        .Sortable()
+        .Pageable()
+)
